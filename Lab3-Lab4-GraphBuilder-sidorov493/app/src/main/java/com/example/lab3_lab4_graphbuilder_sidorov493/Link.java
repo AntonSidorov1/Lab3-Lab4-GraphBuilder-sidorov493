@@ -1,12 +1,56 @@
 package com.example.lab3_lab4_graphbuilder_sidorov493;
 
 public class Link {
-    public Node a, b;
+    public Node Start, End;
     public String Text = "";
     private String Number = "";
     public String GetTextNumber()
     {
         return Number;
+    }
+
+    public boolean IsNotErrow()
+    {
+        return LinkErrow == com.example.lab3_lab4_graphbuilder_sidorov493.LinkErrow.None;
+    }
+
+    public boolean IsErrow()
+    {
+        return !IsNotErrow();
+    }
+
+    public boolean IsStartErrow()
+    {
+        return LinkErrow == com.example.lab3_lab4_graphbuilder_sidorov493.LinkErrow.Start;
+    }
+
+    public boolean IsEndtErrow()
+    {
+        return LinkErrow == com.example.lab3_lab4_graphbuilder_sidorov493.LinkErrow.End;
+    }
+
+    public LinkErrow LinkErrow = com.example.lab3_lab4_graphbuilder_sidorov493.LinkErrow.None;
+
+    public LinkErrow GetErrow()
+    {
+        return  LinkErrow;
+    }
+
+    public void SetErrow(LinkErrow errow)
+    {
+        LinkErrow = errow;
+    }
+
+    public void SetStartErrow() {
+        LinkErrow = LinkErrow.Start;
+    }
+
+    public void SetEndErrow() {
+        LinkErrow = LinkErrow.End;
+    }
+
+    public void SetNotErrow() {
+        LinkErrow = LinkErrow.None;
     }
 
     public int GetNumber()
@@ -43,22 +87,22 @@ public class Link {
 
     }
 
-    public Link (Node a, Node b)
+    public Link (Node start, Node end)
     {
         this();
-        this.a = a;
-        this.b = b;
+        Start = start;
+        End = end;
     }
 
-    public Link(Node a, Node b, String text)
+    public Link(Node start, Node end, String text)
     {
 
-        this(a, b, text, true);
+        this(start, end, text, true);
     }
 
-    public Link(Node a, Node b, String text, Boolean isName)
+    public Link(Node start, Node end, String text, Boolean isName)
     {
-        this(a, b);
+        this(start, end);
         if(isName) {
             Text = text;
         } else
@@ -67,20 +111,20 @@ public class Link {
         }
     }
 
-    public Link(Node a, Node b, int number)
+    public Link(Node start, Node end, int number)
     {
-        this(a, b, String.valueOf(number), false);
+        this(start, end, String.valueOf(number), false);
     }
 
-    public Link(Node a, Node b, String text, String number)
+    public Link(Node start, Node end, String text, String number)
     {
-        this(a, b, text);
+        this(start, end, text);
         SetNumber(number);
     }
 
-    public Link(Node a, Node b, String text, int number)
+    public Link(Node start, Node end, String text, int number)
     {
-        this(a, b, text);
+        this(start, end, text);
         SetNumber(number);
     }
 
