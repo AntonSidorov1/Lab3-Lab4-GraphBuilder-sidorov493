@@ -1,131 +1,89 @@
 package com.example.lab3_lab4_graphbuilder_sidorov493;
 
-public class Link {
-    public Node Start, End;
+import java.util.ArrayList;
+
+public class Link extends GraphElement {
+    Graph graph;
+    public float Value = 0.0f;
+    public boolean Orientation = false;
     public String Text = "";
-    private String Number = "";
-    public String GetTextNumber()
+    public boolean ValueVisible = false;
+    ArrayList<Node> nodes = new ArrayList<>();
+
+    public int ID()
     {
-        return Number;
+        try {
+            return graph.IndexLink(this);
+        }
+        catch (Exception ex)
+        {
+            return  -1;
+        }
     }
 
-    public boolean IsNotErrow()
+    public int id()
     {
-        return LinkErrow == com.example.lab3_lab4_graphbuilder_sidorov493.LinkErrow.None;
+        return ID();
     }
 
-    public boolean IsErrow()
+    public Graph Graph()
     {
-        return !IsNotErrow();
+        return  graph;
     }
-
-    public boolean IsStartErrow()
+    private Node source, target;
+    public Node Source()
     {
-        return LinkErrow == com.example.lab3_lab4_graphbuilder_sidorov493.LinkErrow.Start;
+        return source;
     }
-
-    public boolean IsEndtErrow()
+    public Node Target()
     {
-        return LinkErrow == com.example.lab3_lab4_graphbuilder_sidorov493.LinkErrow.End;
+        return target;
     }
 
-    public LinkErrow LinkErrow = com.example.lab3_lab4_graphbuilder_sidorov493.LinkErrow.None;
-
-    public LinkErrow GetErrow()
-    {
-        return  LinkErrow;
-    }
-
-    public void SetErrow(LinkErrow errow)
-    {
-        LinkErrow = errow;
-    }
-
-    public void SetStartErrow() {
-        LinkErrow = LinkErrow.Start;
-    }
-
-    public void SetEndErrow() {
-        LinkErrow = LinkErrow.End;
-    }
-
-    public void SetNotErrow() {
-        LinkErrow = LinkErrow.None;
-    }
-
-    public int GetNumber()
-    {
-        if(Number == "")
-            return 0;
-        return Integer.getInteger(Number);
-    }
-
-    public void SetNumber()
-    {
-        Number = "";
-    }
-
-    public void SetNumber(int number)
-    {
-        Number = String.valueOf(number);
-    }
-
-    public void SetNumber(String number)
+    public void SetGraph(Graph graph)
     {
         try
         {
-            SetNumber(Integer.getInteger(number));
+            this.graph.DeleteLink(id());
         }
-        catch(Exception e)
+        catch (Exception ex)
         {
-            SetNumber();
+
         }
+
+        this.graph = graph;
     }
 
-    public Link()
+    public void SetNodes(int source, int target)
     {
 
+        this.source = graph.GetNode(source);
+        this.target = graph.GetNode(target);
+        nodes.clear();
+        nodes.add(this.source);
+        nodes.add(this.target);
+        NameElement = this.source.GetName() + " -> " + this.target.GetName();
+
     }
 
-    public Link (Node start, Node end)
+    public Boolean ContainsNode(Node node)
     {
-        this();
-        Start = start;
-        End = end;
+        return nodes.contains(node);
     }
 
-    public Link(Node start, Node end, String text)
+    public Link(Graph graph, int source, int target)
     {
-
-        this(start, end, text, true);
+        super("");
+        SetGraph(graph);
+        SetNodes(source, target);
     }
 
-    public Link(Node start, Node end, String text, Boolean isName)
+    public Link(Graph graph, int source, int target, float value)
     {
-        this(start, end);
-        if(isName) {
-            Text = text;
-        } else
-        {
-            SetNumber(text);
-        }
+        this(graph, source, target);
+        Value = value;
+        ValueVisible = true;
     }
 
-    public Link(Node start, Node end, int number)
-    {
-        this(start, end, String.valueOf(number), false);
-    }
-
-    public Link(Node start, Node end, String text, String number)
-    {
-        this(start, end, text);
-        SetNumber(number);
-    }
-
-    public Link(Node start, Node end, String text, int number)
-    {
-        this(start, end, text);
-        SetNumber(number);
-    }
 
 }
