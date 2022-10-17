@@ -134,4 +134,9 @@ public class Graph extends GraphElement {
         this("graph", id);
     }
 
+    public Graph()
+    {
+        this(GrapsParams.GraphID);
+    }
+
 }

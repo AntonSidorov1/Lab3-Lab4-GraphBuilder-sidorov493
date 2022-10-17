@@ -19,4 +19,33 @@
             android:layout_weight="1"
             android:text="@string/ExitText" />
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#FF96CB"
+        android:backgroundTintMode="multiply"
+        android:foregroundTint="#F30DB9"
+        android:foregroundTintMode="add"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/CreatGraphText" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ListGraphsDBText" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Список графов в API" />
+    </LinearLayout>
 </LinearLayout>

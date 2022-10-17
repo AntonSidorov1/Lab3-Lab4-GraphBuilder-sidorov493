@@ -10,6 +10,13 @@ public class Link extends GraphElement {
     public boolean ValueVisible = false;
     ArrayList<Node> nodes = new ArrayList<>();
 
+    public void ChangeNode()
+    {
+        Node change = source;
+        source = target;
+        target = change;
+    }
+
     public int ID()
     {
         try {

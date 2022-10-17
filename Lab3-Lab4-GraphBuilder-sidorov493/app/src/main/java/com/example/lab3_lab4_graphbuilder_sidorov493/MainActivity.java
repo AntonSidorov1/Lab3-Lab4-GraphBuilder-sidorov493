@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         switch (id)
         {
             case R.id.exit: {
+                
                 View v = exit;
                 Exit_Click(v);
             }
