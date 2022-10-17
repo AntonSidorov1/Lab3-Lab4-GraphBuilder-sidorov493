@@ -2517,6 +2517,7 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
+id ExitButton
 id FUNCTION
 id META
 id NO_DEBUG
@@ -2697,6 +2698,7 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
+id exit
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -3181,9 +3183,12 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+menu main
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
+string ExitText
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

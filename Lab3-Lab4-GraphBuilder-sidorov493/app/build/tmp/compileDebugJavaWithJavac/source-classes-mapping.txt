@@ -4,11 +4,14 @@ com/example/lab3_lab4_graphbuilder_sidorov493/GraphElement.java
  com.example.lab3_lab4_graphbuilder_sidorov493.GraphElement
 com/example/lab3_lab4_graphbuilder_sidorov493/BuildConfig.java
  com.example.lab3_lab4_graphbuilder_sidorov493.BuildConfig
-com/example/lab3_lab4_graphbuilder_sidorov493/MainActivity.java
- com.example.lab3_lab4_graphbuilder_sidorov493.MainActivity
+com/example/lab3_lab4_graphbuilder_sidorov493/Graph.java
+ com.example.lab3_lab4_graphbuilder_sidorov493.Graph
 com/example/lab3_lab4_graphbuilder_sidorov493/Link.java
  com.example.lab3_lab4_graphbuilder_sidorov493.Link
 com/example/lab3_lab4_graphbuilder_sidorov493/Node.java
  com.example.lab3_lab4_graphbuilder_sidorov493.Node
-com/example/lab3_lab4_graphbuilder_sidorov493/Graph.java
- com.example.lab3_lab4_graphbuilder_sidorov493.Graph
+com/example/lab3_lab4_graphbuilder_sidorov493/MainActivity.java
+ com.example.lab3_lab4_graphbuilder_sidorov493.MainActivity
+ com.example.lab3_lab4_graphbuilder_sidorov493.MainActivity$1
+ com.example.lab3_lab4_graphbuilder_sidorov493.MainActivity$2
+ com.example.lab3_lab4_graphbuilder_sidorov493.MainActivity$3
