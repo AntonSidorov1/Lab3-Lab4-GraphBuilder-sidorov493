@@ -2456,6 +2456,7 @@ int drawable design_ic_visibility 0x7f070061
 int drawable design_ic_visibility_off 0x7f070062
 int drawable design_password_eye 0x7f070063
 int drawable design_snackbar_background 0x7f070064
+int drawable exit_background 0x7f07009d
 int drawable ic_clock_black_24dp 0x7f070065
 int drawable ic_keyboard_black_24dp 0x7f070066
 int drawable ic_launcher_background 0x7f070067
@@ -3094,6 +3095,7 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0b0018
 int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
+int layout activity_graph_edit2 0x7f0b0077
 int layout activity_main 0x7f0b001c
 int layout custom_dialog 0x7f0b001d
 int layout design_bottom_navigation_item 0x7f0b001e
@@ -3186,6 +3188,9 @@ int layout text_view_with_line_height_from_style 0x7f0b0074
 int layout text_view_with_theme_line_height 0x7f0b0075
 int layout text_view_without_line_height 0x7f0b0076
 int menu main 0x7f0c0000
+int mipmap exit 0x7f0d0003
+int mipmap exit_foreground 0x7f0d0004
+int mipmap exit_round 0x7f0d0005
 int mipmap ic_launcher 0x7f0d0000
 int mipmap ic_launcher_foreground 0x7f0d0001
 int mipmap ic_launcher_round 0x7f0d0002

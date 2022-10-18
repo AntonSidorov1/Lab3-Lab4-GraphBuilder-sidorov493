@@ -72,27 +72,22 @@ public class GraphView extends SurfaceView
             canvas.drawLine(sx, sy, tx, ty, p);
             if(l.Orientation)
             {
-                float dx = tx - sx;
-                float dy = ty - sy;
-                if(dx < 0.0f)
-                {
-                    dx = -1f;
-                }
+                float xRad, yRad;
+                if(tx > sx)
+                    xRad = tx-rad;
+                else if(tx < sx)
+                    xRad = tx+rad;
                 else
-                {
-                    dx = 1f;
-                }
-                if(dy < 0.0f)
-                {
-                    dy = -1f;
-                }
+                    xRad = tx;
+
+                if(ty > sy)
+                    yRad = ty-rad;
+                else if(tx < sx)
+                    yRad = ty+rad;
                 else
-                {
-                    dy = 1f;
-                }
-                dx = dx * 4f;
-                dy = dy * 4f;
-                canvas.drawRect(tx, ty, tx + dx, ty + dy, p);
+                    yRad = ty;
+
+                canvas.drawRect(xRad-0.5f, yRad-0.5f, xRad+0.5f, yRad+0.5f, p);
             }
 
             float cx = (sx + tx)*0.5f;

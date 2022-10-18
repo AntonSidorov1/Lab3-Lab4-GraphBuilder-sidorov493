@@ -20,6 +20,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.Lab3Lab4GraphBuildersidorov493" >
         <activity
+            android:name="com.example.lab3_lab4_graphbuilder_sidorov493.GraphEdit2"
+            android:exported="true" />
+        <activity
             android:name="com.example.lab3_lab4_graphbuilder_sidorov493.MainActivity"
             android:exported="true" >
             <intent-filter>
