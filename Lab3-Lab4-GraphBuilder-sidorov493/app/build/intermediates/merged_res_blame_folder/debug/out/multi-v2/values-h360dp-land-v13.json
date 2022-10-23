@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h360dp-land-v13\\values-h360dp-land-v13.xml",
+            "outputFile": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h360dp-land-v13\\values-h360dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-3\\4858cb7de511a4cae552cb9893054568\\transformed\\material-1.6.1\\res\\values-h360dp-land-v13\\values-h360dp-land-v13.xml",
+                    "source": "C:\\Users\\Anton\\.gradle\\caches\\transforms-3\\4858cb7de511a4cae552cb9893054568\\transformed\\material-1.6.1\\res\\values-h360dp-land-v13\\values-h360dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

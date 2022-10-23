@@ -17,8 +17,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/Theme.Lab3Lab4GraphBuildersidorov493" >
+        <activity
+            android:name="com.example.lab3_lab4_graphbuilder_sidorov493.GraphElementEdit"
+            android:exported="false" />
         <activity
             android:name="com.example.lab3_lab4_graphbuilder_sidorov493.GraphEdit2"
             android:exported="true" />

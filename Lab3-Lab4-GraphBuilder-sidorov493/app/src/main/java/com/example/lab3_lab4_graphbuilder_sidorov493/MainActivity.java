@@ -5,6 +5,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -78,5 +79,13 @@ public class MainActivity extends AppCompatActivity {
                 "С уважением и любовью, Создатель программы, Сидоров Антон Дмитриевич");
         dlg.show();
     }
+
+    public void GraphCreate(View v)
+    {
+        Intent i = new Intent(this, GraphEdit2.class);
+        startActivity(i);
+    }
+
+
 
 }

@@ -4,12 +4,12 @@ import android.graphics.Color;
 
 public class ColorNode {
     int fill = Color.rgb(255, 255, 255);
-    public int GetFillColor()
+    public int GetBorderColor()
     {
         return fill;
     }
 
-    public int GetBorderColor()
+    public int GetFillColor()
     {
         int color = fill;
         int red = Color.red(color);
@@ -35,17 +35,17 @@ public class ColorNode {
 
     public int GetFillRed()
     {
-        return Color.red(fill);
+        return Color.red(GetFillColor());
     }
 
     public int GetFillGreen()
     {
-        return Color.green(fill);
+        return Color.green(GetFillColor());
     }
 
     public int GetFillBlue()
     {
-        return Color.green(fill);
+        return Color.green(GetFillColor());
     }
 
     public void SetFillColor(int color)

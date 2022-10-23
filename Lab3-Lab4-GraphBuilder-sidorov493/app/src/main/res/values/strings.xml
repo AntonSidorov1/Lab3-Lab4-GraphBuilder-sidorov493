@@ -3,4 +3,11 @@
     <string name="ExitText">Выйти</string>
     <string name="CreatGraphText">Создать граф</string>
     <string name="ListGraphsDBText">Список графов в Базе данных</string>
+    <string name="CloseprogramText">Закрыть программу</string>
+    <string name="BackText">Назад</string>
+    <string name="addnode">AddNode</string>
+    <string name="CancelText">Отмена</string>
+    <string name="Savetext">Сохранить</string>
+    <string name="idElementText">ID:</string>
+    <string name="nameElementText">Имя:</string>
 </resources>

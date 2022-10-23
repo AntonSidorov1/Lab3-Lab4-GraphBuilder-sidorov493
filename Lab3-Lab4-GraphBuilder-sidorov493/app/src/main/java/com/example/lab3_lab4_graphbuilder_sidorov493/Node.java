@@ -9,20 +9,21 @@ public class Node extends GraphElement {
         NameElement = name;
     }
 
+    @Override
+    public String GetNameFromID() {
+        return "Node" + String.valueOf(id());
+    }
+
     public int ID()
     {
         try {
-            return graph.IndexNode(this);
+            int index = graph.IndexNode(this);
+            return index;
         }
         catch (Exception ex)
         {
             return  -1;
         }
-    }
-
-    public int id()
-    {
-        return ID();
     }
 
     public Graph GetGraph()
@@ -61,9 +62,36 @@ public class Node extends GraphElement {
     public Node(float x, float y, Graph graph)
     {
         this(x, y, "", graph);
-        NameElement = "Node" + String.valueOf(id());
+        SetNameFromID();
     }
 
+    public Node(Graph graph)
+    {
+        this(450.0f, 450.0f, graph);
+    }
+
+    public Node (Node node, Graph graph)
+    {
+        this(node.X, node.Y, node.GetName(), graph);
+    }
+
+    public float rad = 0.0f;
 
 
+    @Override
+    public String TypeText() {
+        return "Узел (Node)";
+    }
+
+    public void SetNode(float x, float y, String name)
+    {
+        X = x;
+        Y = y;
+        NameElement = name;
+    }
+
+    public void SetNode(Node node)
+    {
+        SetNode(node.X, node.Y, node.GetName());
+    }
 }

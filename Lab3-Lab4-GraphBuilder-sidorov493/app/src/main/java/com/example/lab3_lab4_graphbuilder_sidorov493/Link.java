@@ -10,6 +10,22 @@ public class Link extends GraphElement {
     public boolean ValueVisible = false;
     ArrayList<Node> nodes = new ArrayList<>();
 
+    @Override
+    public String GetNameFromID() {
+        return GetName();
+    }
+
+    public void DecrimentAfterID(int id)
+    {
+        //id++;
+        if(sourceID >= id)
+            sourceID--;
+        if(targetID >= id)
+            targetID--;
+        SetNodes();
+    }
+
+
     public void ChangeNode()
     {
         Node change = source;
@@ -40,12 +56,17 @@ public class Link extends GraphElement {
     private Node source, target;
     public Node Source()
     {
+        SetNodes();
         return source;
     }
     public Node Target()
     {
+        SetNodes();
         return target;
     }
+
+    public int sourceID, targetID;
+    ArrayList<Integer> IDs = new ArrayList<>();
 
     public void SetGraph(Graph graph)
     {
@@ -61,14 +82,32 @@ public class Link extends GraphElement {
         this.graph = graph;
     }
 
+    public void SetNodes()
+    {
+        SetNodes(sourceID, targetID);
+    }
+
     public void SetNodes(int source, int target)
     {
+
+        if(target > graph.NodeCount())
+            target = graph.NodeCount()-1;
+        if(source == target)
+            source = target-1;
 
         this.source = graph.GetNode(source);
         this.target = graph.GetNode(target);
         nodes.clear();
         nodes.add(this.source);
         nodes.add(this.target);
+
+        IDs.clear();
+
+        sourceID = source;
+        targetID = target;
+        IDs.add(source);
+        IDs.add(target);
+
         NameElement = this.source.GetName() + " -> " + this.target.GetName();
 
     }
@@ -76,6 +115,21 @@ public class Link extends GraphElement {
     public Boolean ContainsNode(Node node)
     {
         return nodes.contains(node);
+    }
+
+    public Boolean ContainsNode(int node)
+    {
+        return IDs.contains(node);
+    }
+
+    public Boolean ContainsNodes(Node node1, Node node2)
+    {
+        return ContainsNode(node1) && ContainsNode(node2);
+    }
+
+    public Boolean ContainsNodes(int node1, int node2)
+    {
+        return ContainsNode(node1) && ContainsNode(node2);
     }
 
     public Link(Graph graph, int source, int target)
@@ -93,4 +147,17 @@ public class Link extends GraphElement {
     }
 
 
+    @Override
+    public String TypeText() {
+        return "Связь (Link)";
+    }
+
+    @Override
+    public String GetName() {
+        String line = "-";
+        if(Orientation)
+            line+=">";
+        String name = source.GetName() + " " + line + " " + target.GetName();
+        return name;
+    }
 }
