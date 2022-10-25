@@ -79,8 +79,8 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="H:\Иконки\Редактирование узла графа.png" />
-                                                <entry key="scalingPercent" value="62" />
+                                                <entry key="imagePath" value="H:\Иконки\Изменить ориентацию ребра.png" />
+                                                <entry key="scalingPercent" value="76" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -112,7 +112,7 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="outputName" value="editnode_graph" />
+                                      <entry key="outputName" value="change_orientation_graph" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -289,6 +289,11 @@
                 </map>
               </option>
             </PersistentState>
+          </value>
+        </entry>
+        <entry key="vectorWizard">
+          <value>
+            <PersistentState />
           </value>
         </entry>
       </map>

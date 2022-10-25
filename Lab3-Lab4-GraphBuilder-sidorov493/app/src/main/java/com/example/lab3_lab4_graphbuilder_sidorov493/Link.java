@@ -28,9 +28,15 @@ public class Link extends GraphElement {
 
     public void ChangeNode()
     {
-        Node change = source;
-        source = target;
-        target = change;
+        int change = sourceID;
+        sourceID = targetID;
+        targetID = change;
+        SetNodes();
+    }
+
+    public  void ChangeOrientationLink()
+    {
+        ChangeNode();
     }
 
     public int ID()

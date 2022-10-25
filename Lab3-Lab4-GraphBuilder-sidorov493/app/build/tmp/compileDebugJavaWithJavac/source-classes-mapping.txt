@@ -1,3 +1,5 @@
+com/example/lab3_lab4_graphbuilder_sidorov493/LayoutPoleInput.java
+ com.example.lab3_lab4_graphbuilder_sidorov493.LayoutPoleInput
 com/example/lab3_lab4_graphbuilder_sidorov493/GraphView.java
  com.example.lab3_lab4_graphbuilder_sidorov493.GraphView
 com/example/lab3_lab4_graphbuilder_sidorov493/ColorNode.java

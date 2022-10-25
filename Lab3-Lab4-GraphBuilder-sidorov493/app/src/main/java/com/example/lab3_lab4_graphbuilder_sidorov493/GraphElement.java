@@ -53,7 +53,7 @@ public abstract class GraphElement {
 
     public boolean IsLink()
     {
-        return this instanceof Node;
+        return this instanceof Link;
     }
 
     public boolean IsGraph()

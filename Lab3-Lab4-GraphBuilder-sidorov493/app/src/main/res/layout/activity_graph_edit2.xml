@@ -78,6 +78,22 @@
                         android:foreground="@mipmap/editnode_graph_round"
                         android:onClick="EditNode"
                         android:text="Button" />
+
+                    <Button
+                        android:id="@+id/button8"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:foreground="@mipmap/orientation_graph"
+                        android:onClick="SetOrientationLink"
+                        android:text="Button" />
+
+                    <Button
+                        android:id="@+id/button11"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:foreground="@mipmap/change_orientation_graph"
+                        android:onClick="ChangeOrientationLink"
+                        android:text="Button" />
                 </LinearLayout>
             </ScrollView>
         </LinearLayout>

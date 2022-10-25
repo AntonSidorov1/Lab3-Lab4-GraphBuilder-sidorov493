@@ -93,6 +93,8 @@ public class GraphEdit2 extends AppCompatActivity {
 
     public void SetLink(View v) {graphs.SetLink(false);}
 
+    public void SetOrientationLink(View v) {graphs.SetLink(true);}
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         if (requestCode==555 || resultCode == 555) // Проверяем код результата (2-ая Activity была запущена с кодом 555)
@@ -106,8 +108,14 @@ public class GraphEdit2 extends AppCompatActivity {
         {
             if(data != null)
             {
-                if(GrapsParams.GraphElement.IsNode()) {
-                    graphs.DeleteNode(GrapsParams.elementID());
+                int id = GrapsParams.elementID();
+                if(GrapsParams.GraphElement.IsNode())
+                {
+                    graphs.DeleteNode(id);
+                }
+                else
+                {
+                    graphs.DeleteLink(id);
                 }
             }
         }
@@ -115,5 +123,9 @@ public class GraphEdit2 extends AppCompatActivity {
         super.onActivityResult(requestCode,resultCode,data);
     }
 
+    public void ChangeOrientationLink(View v)
+    {
+        graphs.ChangeOrientationLink();
+    }
 
 }

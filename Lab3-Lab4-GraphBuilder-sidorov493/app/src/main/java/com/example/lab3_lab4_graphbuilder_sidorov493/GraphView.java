@@ -162,7 +162,38 @@ public class GraphView extends SurfaceView
 
     public Link SetLink(boolean orientation)
     {
+        if(selectedNowLink < 0 || selectedNowLink >= graph.LinkCount())
         return SetLink(selected1, selected2, orientation);
+        else
+        {
+            Link l = graph.GetLink(selectedNowLink);
+            l.Orientation = orientation;
+            for(int i = 0; i < graph.LinkCount(); i++)
+            {
+                Link l1 = graph.GetLink(i);
+                if(i != selectedNowLink)
+                if(l.Orientation)
+                {
+                    if(l1.ContainsNodes(l.sourceID, l.targetID));
+                    {
+                        DeleteLink(selectedNowLink);
+                        SetGraph(graph);
+                        return null;
+                    }
+                }
+                else
+                {
+                    if(l1.sourceID == l.sourceID && l1.targetID == l.targetID)
+                    {
+                        DeleteLink(selectedNowLink);
+                        SetGraph(graph);
+                        return  null;
+                    }
+                }
+            }
+            SetGraph(graph);
+            return l;
+        }
     }
 
     public Graph GetGraph()
@@ -243,25 +274,50 @@ public class GraphView extends SurfaceView
         SetGraph(graph);
     }
 
+    public void DeleteLink (int id)
+    {
+        if(id > -1 && id < graph.LinkCount())
+        {
+            graph.DeleteLink(id);
+        }
+    }
+
+    public void ChangeOrientationLink(int id)
+    {
+        if(id > -1 && id < graph.LinkCount())
+        {
+            graph.GetLink(id).ChangeOrientationLink();
+            SetGraph(graph);
+        }
+    }
+
+    public void ChangeOrientationLink()
+    {
+        ChangeOrientationLink(SelectedNowLink());
+    }
+
     public void Delete()
     {
-        DeleteNode(selectedNowNode);
-        if(selected1 == selectedNowNode)
-        {
+        if(selectedNowNode > -1) {
+            DeleteNode(selectedNowNode);
+            if (selected1 == selectedNowNode) {
 
-            selected1 = selected2;
-            selected2 = -1;
+                selected1 = selected2;
+                selected2 = -1;
+            } else if (selected2 == selectedNowNode) {
+                selected2 = -1;
+
+            }
+
+            if (selected1 > selectedNowNode)
+                selected1--;
+            if (selected2 > selectedNowNode)
+                selected2--;
         }
-        else if (selected2 == selectedNowNode)
+        else if (selectedNowLink > -1)
         {
-            selected2 = -1;
-
+            DeleteLink(selectedNowLink);
         }
-
-        if(selected1 > selectedNowNode)
-            selected1--;
-        if(selected2 > selectedNowNode)
-            selected2 --;
         SetGraph(graph);
     }
 
@@ -274,20 +330,24 @@ public class GraphView extends SurfaceView
     float dX = 0.0f, dY = 0.0f;
     float sX = 0.0f, sY = 0.0f;
 
+    float halfside = 40.0f;
+    float rad = 60.0f;
     @Override
     protected void onDraw(Canvas canvas) {
         try {
 
+            halfside = rad/2f;
             float csx = CSX(), csy = CSY(), ctx = CTX(), cty = CTY();
 
             p.setStrokeWidth(10.0f);
             //canvas.scale(1800.0f, 3600.0f);
             canvas.drawColor(Color.rgb(255, 255, 255));
 
-            float halfside = 14.0f;
-            float rad = 50.0f;
+
+
 
             int links = graph.LinkCount();
+            p.setStyle(Paint.Style.FILL);
             for (int i = 0; i < links; i++) {
                 try {
 
@@ -306,22 +366,15 @@ public class GraphView extends SurfaceView
                     canvas.drawLine(sx, sy, tx, ty, p);
                     if (l.Orientation) {
                         float xRad, yRad;
-                        if (tx > sx)
-                            xRad = tx - rad;
-                        else if (tx < sx)
-                            xRad = tx + rad;
-                        else
-                            xRad = tx;
 
-                        if (ty > sy)
-                            yRad = ty - rad;
-                        else if (tx < sx)
-                            yRad = ty + rad;
-                        else
-                            yRad = ty;
+                        float URad = (rad*2f)/(sx + tx);
+                        URad = 1f - URad;
+                        xRad = (tx - sx)*URad;
+                        yRad = (ty - sy) * URad;
+                        xRad += sx;
+                        yRad += sy;
 
-
-                        float d = 14f;
+                        float d = halfside / 2f;
                         canvas.drawRect(xRad - d, yRad - d, xRad + d, yRad + d, p);
                     }
 
@@ -332,8 +385,17 @@ public class GraphView extends SurfaceView
                     float y0 = cy - halfside;
                     float y1 = cy + halfside;
 
-                    if (i == selectedNowLink) p.setColor(Select2.GetBorderColor());
-                    else p.setColor(Select1.GetBorderColor());
+
+                    ColorNode color;
+                    if(i == selectedNowLink) color = Select2;
+                    else color = Select1;
+
+                    p.setStyle(Paint.Style.FILL);
+                    p.setColor(color.GetFillColor());
+                    canvas.drawRect(x0, y0, x1, y1, p);
+
+                    p.setStyle(Paint.Style.STROKE);
+                    p.setColor(color.GetBorderColor());
                     canvas.drawRect(x0, y0, x1, y1, p);
 
                 }
@@ -483,14 +545,43 @@ public class GraphView extends SurfaceView
                             }
                         }
 
-                        for(int i = 0; i < graph.LinkCount(); i++)
-                        {
-
-                        }
-
                         selected1 = -1;
                         selected2 = -1;
                         selectedNowNode = -1;
+
+                        for(int i = 0; i < graph.LinkCount(); i++)
+                        {
+                            Link l = graph.GetLink(i);
+                            Node s = l.Source();
+                            Node t = l.Target();
+                            float sx = s.X;
+                            float tx = t.X;
+                            float sy = s.Y;
+                            float ty = t.Y;
+
+                            float cx = (sx + tx) * 0.5f;
+                            float cy = (sy + ty) * 0.5f;
+                            float x0 = cx - halfside;
+                            float x1 = cx + halfside;
+                            float y0 = cy - halfside;
+                            float y1 = cy + halfside;
+                            if(i == selectedNowLink)
+                            {
+                                selectedNowLink = -1;
+
+                                SetGraph(graph);
+                                return true;
+                            }
+                            else if (xc >= x0 && xc <= x1 && yc >= y0 && yc <= y1)
+                            {
+                                selectedNowLink = i;
+
+                                SetGraph(graph);
+                                return true;
+                            }
+                        }
+                        selectedNowLink = -1;
+
                         SetGraph(graph);
                         toach = true;
                         return true;
