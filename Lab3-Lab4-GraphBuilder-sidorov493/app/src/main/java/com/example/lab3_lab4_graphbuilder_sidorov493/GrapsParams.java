@@ -9,4 +9,8 @@ public class GrapsParams {
     {
         return GraphElement.id();
     }
+
+    public static GraphElement_List graphList;
+
+    public static GraphElement GraphCopy;
 }

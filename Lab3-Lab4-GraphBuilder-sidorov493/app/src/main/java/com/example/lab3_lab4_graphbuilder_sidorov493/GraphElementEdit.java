@@ -22,16 +22,18 @@ import java.time.LocalDateTime;
 
 public class GraphElementEdit extends AppCompatActivity {
 
-    Button exit, buttonNameID;
+    Button exit, buttonNameID, ChangeOrientation;
     TextView id, nameLabel, dateTime, elementType;
     EditText nameEdit;
 
     GraphElement graphElement;
     LinearLayout nameLayout, nameEditLayout, attributesPanel;
-    LinearLayout xyPanel, stPanel, mainPanel;
+    LinearLayout xyPanel, stPanel, mainPanel, OrientationPanel;
     LayoutPoleInput xPole, yPole;
 
     CheckBox OrientationGraph;
+    TextVisibleView LinkText, LinkValue;
+    Button copy, past;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,7 +54,12 @@ public class GraphElementEdit extends AppCompatActivity {
         id.setText(String.valueOf(graphElement.ID()));
         nameLayout = findViewById(R.id.NameLayout);
         nameLabel = findViewById(R.id.NameLabel);
+        try{
         nameLabel.setText(graphElement.GetName());
+        }
+        catch (Exception ex) {
+
+        }
 
         nameEditLayout = new LinearLayout(this);
         nameEditLayout.setOrientation(LinearLayout.VERTICAL);
@@ -95,7 +102,7 @@ public class GraphElementEdit extends AppCompatActivity {
         });
 
         nameEditLayout.addView(buttonNameID);
-        if(graphElement.IsNode()) {
+        if(graphElement.IsNode() || graphElement.IsGraph()) {
             nameLayout.addView(nameEditLayout);
         }
 
@@ -113,9 +120,33 @@ public class GraphElementEdit extends AppCompatActivity {
         yPole.setLayoutParams(params1);
         xyPanel.addView(yPole);
 
+        OrientationPanel = new LinearLayout(this);
+        OrientationPanel.setLayoutParams(params);
+
         OrientationGraph = new CheckBox(this);
         OrientationGraph.setLayoutParams(params1);
         OrientationGraph.setText("Ориентированное ребро");
+        OrientationPanel.addView(OrientationGraph);
+
+        ChangeOrientation = new Button(this);
+        ChangeOrientation.setLayoutParams(params1);
+        ChangeOrientation.setText("Сменить направление");
+        ChangeOrientation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String source = xPole.InputPole().getText().toString();
+                String target = yPole.InputPole().getText().toString();
+                String change = source;
+                source = target;
+                target = change;
+                xPole.InputPole().setText(source);
+                yPole.InputPole().setText(target);
+            }
+        });
+        OrientationPanel.addView(ChangeOrientation);
+
+        LinkText = new TextVisibleView(this);
+        LinkValue = new TextVisibleView(this);
 
         if(graphElement.IsNode())
         {
@@ -130,22 +161,130 @@ public class GraphElementEdit extends AppCompatActivity {
             attributesPanel.addView(xyPanel);
             Link n = graphElement.Link();
             xPole.SignaturePole().setText("Source: ");
-            xPole.InputPole().setText(String.valueOf(n.sourceID));
+            try {
+
+        nameEdit.setText(nameLabel.getText().toString());
+                xPole.InputPole().setText(String.valueOf(n.sourceID));
+            }
+            catch (Exception ex) {
+
+            }
             yPole.SignaturePole().setText("Target: ");
+            try{
             yPole.InputPole().setText(String.valueOf(n.targetID));
-            mainPanel.addView(OrientationGraph);
+            }
+            catch (Exception ex) {
+
+            }
+            mainPanel.addView(OrientationPanel);
             OrientationGraph.setChecked(n.Orientation);
+            try{
+            LinkText.SetText(n.GetText());
+            LinkText.SetTextVisible(n.TextVisible);
+            }
+            catch (Exception ex) {
+
+            }
+            mainPanel.addView(LinkText);
+            try{
+            LinkValue.SetText(n.GetTextValue());
+            LinkValue.SetTextVisible(n.ValueVisible);
+        }
+            catch (Exception ex) {
+
+        }
+            mainPanel.addView(LinkValue);
+        }
+        else if(graphElement.IsGraph())
+        {
+
         }
 
-        UpdateElement();
+        //UpdateElement();
 
         dateTime = findViewById(R.id.DateTimeText);
         dateTime.setText(graphElement.TimeStamp);
+
+        copy = new Button(this);
+        past = new Button(this);
+        copy.setText("Копировать");
+        past.setText("Вставить");
+        copy.setLayoutParams(params);
+        past.setLayoutParams(params);
+        copy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                CopyElement(view);
+            }
+        });
+        past.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+               PastElement(view);
+            }
+        });
+        mainPanel.addView(copy);
+        mainPanel.addView(past);
     }
 
     public void UpdateElement()
     {
+        try{
+                nameLabel.setText(graphElement.GetName());
+            }
+            catch (Exception ex) {
 
+            }
+        try {
+            if (graphElement.IsNode()) {
+                nameEdit.setText(nameLabel.getText().toString());
+                //attributesPanel.addView(xyPanel);
+                Node n = graphElement.Node();
+                xPole.SignaturePole().setText("X: ");
+                xPole.InputPole().setText(String.valueOf(n.X));
+                yPole.SignaturePole().setText("Y: ");
+                yPole.InputPole().setText(String.valueOf(n.Y));
+            } else if (graphElement.IsLink()) {
+                //attributesPanel.addView(xyPanel);
+                Link n = graphElement.Link();
+                xPole.SignaturePole().setText("Source: ");
+                try {
+
+                    xPole.InputPole().setText(String.valueOf(n.sourceID));
+                } catch (Exception ex) {
+
+                }
+                yPole.SignaturePole().setText("Target: ");
+                try {
+                    yPole.InputPole().setText(String.valueOf(n.targetID));
+                } catch (Exception ex) {
+
+                }
+                //mainPanel.addView(OrientationPanel);
+                OrientationGraph.setChecked(n.Orientation);
+                try {
+                    LinkText.SetText(n.GetText());
+                    LinkText.SetTextVisible(n.TextVisible);
+                } catch (Exception ex) {
+
+                }
+                //mainPanel.addView(LinkText);
+                try {
+                    LinkValue.SetText(n.GetTextValue());
+                    LinkValue.SetTextVisible(n.ValueVisible);
+                } catch (Exception ex) {
+
+                }
+                //mainPanel.addView(LinkValue);
+            } else if (graphElement.IsGraph()) {
+
+                nameEdit.setText(nameLabel.getText().toString());
+            }
+        }
+        catch(Exception ex)
+        {
+
+        }
     }
 
 
@@ -175,11 +314,22 @@ public class GraphElementEdit extends AppCompatActivity {
                 int target = Integer.valueOf(yPole.InputPole().getText().toString());
                 node.SetNodes(source, target);
                 node.Orientation = OrientationGraph.isChecked();
+                node.TextVisible = LinkText.IsTextVisible();
+                node.SetText(LinkText.GetText());
+                node.ValueVisible = LinkValue.IsTextVisible();
+                node.SetValue(LinkValue.GetText());
+        nameEdit.setText(nameLabel.getText().toString());
             }
             catch (Exception ex)
             {
                 return;
             }
+        }
+        else if(graphElement.IsGraph())
+        {
+
+                Graph node = graphElement.Graph();
+                node.SetName(name);
         }
 
         GrapsParams.GraphElement = graphElement;
@@ -233,6 +383,26 @@ public class GraphElementEdit extends AppCompatActivity {
     public void Exit_Click(View v)
     {
         finish();
+    }
+
+    public void PastElement(View v)
+    {
+        try {
+
+            if (graphElement.EqualsTypes(GrapsParams.GraphCopy)) {
+                graphElement = GrapsParams.GraphCopy.CopyElement();
+                UpdateElement();
+            }
+        }
+        catch (Exception ex)
+        {
+
+        }
+    }
+
+    public void CopyElement(View v)
+    {
+        GrapsParams.GraphCopy = graphElement.CopyElement();
     }
 
 }

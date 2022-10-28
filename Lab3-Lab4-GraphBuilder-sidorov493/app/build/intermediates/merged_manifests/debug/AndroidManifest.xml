@@ -19,6 +19,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lab3Lab4GraphBuildersidorov493" >
         <activity
+            android:name="com.example.lab3_lab4_graphbuilder_sidorov493.GraphElementsListActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.lab3_lab4_graphbuilder_sidorov493.GraphElementEdit"
             android:exported="false" />
         <activity

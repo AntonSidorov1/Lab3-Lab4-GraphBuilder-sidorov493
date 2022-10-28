@@ -1,5 +1,13 @@
 [
     {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_property_graph_foreground.png.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xhdpi\\property_graph_foreground.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_list_graph_round.png.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-hdpi\\list_graph_round.png"
+    },
+    {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_orientation_graph_round.png.flat",
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-hdpi\\orientation_graph_round.png"
     },
@@ -10,6 +18,10 @@
     {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_property_graph.xml.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-anydpi-v26\\property_graph.xml"
     },
     {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
@@ -26,6 +38,10 @@
     {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_exit.xml.flat",
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-anydpi-v26\\exit.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_list_graph_foreground.png.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-mdpi\\list_graph_foreground.png"
     },
     {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_exit.png.flat",
@@ -56,6 +72,10 @@
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\drawable\\delete_graph_background.xml"
     },
     {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_list_graph_round.png.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xxhdpi\\list_graph_round.png"
+    },
+    {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_change_orientation_graph.png.flat",
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xxhdpi\\change_orientation_graph.png"
     },
@@ -76,32 +96,40 @@
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xxxhdpi\\editnode_graph_round.png"
     },
     {
-        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_plus_graph.png.flat",
-        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-hdpi\\plus_graph.png"
-    },
-    {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_exit_foreground.png.flat",
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xxhdpi\\exit_foreground.png"
     },
     {
-        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_editnode_graph_round.png.flat",
-        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xhdpi\\editnode_graph_round.png"
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_plus_graph.png.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-hdpi\\plus_graph.png"
     },
     {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_editnode_graph.png.flat",
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xxxhdpi\\editnode_graph.png"
     },
     {
-        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_delete_graph_round.png.flat",
-        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xxxhdpi\\delete_graph_round.png"
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_editnode_graph_round.png.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xhdpi\\editnode_graph_round.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_property_graph_round.png.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-mdpi\\property_graph_round.png"
     },
     {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_editnode_graph_round.xml.flat",
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-anydpi-v26\\editnode_graph_round.xml"
     },
     {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_delete_graph_round.png.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xxxhdpi\\delete_graph_round.png"
+    },
+    {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_orientation_graph.png.flat",
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xxhdpi\\orientation_graph.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_property_graph.png.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-mdpi\\property_graph.png"
     },
     {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_link_graph_foreground.png.flat",
@@ -114,6 +142,10 @@
     {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_orientation_graph_foreground.png.flat",
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xxhdpi\\orientation_graph_foreground.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_list_graph.png.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-hdpi\\list_graph.png"
     },
     {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_delete_graph.png.flat",
@@ -136,28 +168,44 @@
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_list_graph_round.png.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xhdpi\\list_graph_round.png"
+    },
+    {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_graph_element_edit.xml.flat",
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\layout\\activity_graph_element_edit.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_list_graph_foreground.png.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xhdpi\\list_graph_foreground.png"
     },
     {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_plus_graph_foreground.png.flat",
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xhdpi\\plus_graph_foreground.png"
     },
     {
-        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_plus_graph_round.png.flat",
-        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xxhdpi\\plus_graph_round.png"
-    },
-    {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_exit.png.flat",
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xxhdpi\\exit.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_plus_graph_round.png.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xxhdpi\\plus_graph_round.png"
     },
     {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\drawable_plus_graph_background.xml.flat",
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\drawable\\plus_graph_background.xml"
     },
     {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_list_graph.png.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xxhdpi\\list_graph.png"
+    },
+    {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_plus_graph_foreground.png.flat",
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xxxhdpi\\plus_graph_foreground.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_list_graph.png.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-mdpi\\list_graph.png"
     },
     {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_link_graph.xml.flat",
@@ -204,8 +252,16 @@
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\drawable\\change_orientation_graph_background.xml"
     },
     {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_graph_elements_list.xml.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\layout\\activity_graph_elements_list.xml"
+    },
+    {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_editnode_graph.png.flat",
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xxhdpi\\editnode_graph.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\drawable_list_graph_background.xml.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\drawable\\list_graph_background.xml"
     },
     {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_plus_graph.png.flat",
@@ -228,6 +284,10 @@
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xhdpi\\exit_round.png"
     },
     {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_property_graph_foreground.png.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-hdpi\\property_graph_foreground.png"
+    },
+    {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_exit.png.flat",
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xxxhdpi\\exit.png"
     },
@@ -238,6 +298,10 @@
     {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_change_orientation_graph.png.flat",
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xxxhdpi\\change_orientation_graph.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_property_graph.png.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xxhdpi\\property_graph.png"
     },
     {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_editnode_graph_round.png.flat",
@@ -252,8 +316,16 @@
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\drawable\\exit_background.xml"
     },
     {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_property_graph_round.png.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xxhdpi\\property_graph_round.png"
+    },
+    {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_list_graph_round.xml.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-anydpi-v26\\list_graph_round.xml"
     },
     {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_change_orientation_graph_foreground.png.flat",
@@ -274,6 +346,10 @@
     {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_orientation_graph_round.png.flat",
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-mdpi\\orientation_graph_round.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_list_graph.png.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xxxhdpi\\list_graph.png"
     },
     {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_orientation_graph_foreground.png.flat",
@@ -316,6 +392,10 @@
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\drawable\\orientation_graph_background.xml"
     },
     {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_list_graph_foreground.png.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xxhdpi\\list_graph_foreground.png"
+    },
+    {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_orientation_graph.xml.flat",
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-anydpi-v26\\orientation_graph.xml"
     },
@@ -326,6 +406,14 @@
     {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_change_orientation_graph_round.png.flat",
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xxxhdpi\\change_orientation_graph_round.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_property_graph.png.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xxxhdpi\\property_graph.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_property_graph_round.png.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xhdpi\\property_graph_round.png"
     },
     {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_editnode_graph_round.png.flat",
@@ -344,6 +432,10 @@
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_list_graph_foreground.png.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-hdpi\\list_graph_foreground.png"
+    },
+    {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_editnode_graph_foreground.png.flat",
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-hdpi\\editnode_graph_foreground.png"
     },
@@ -352,8 +444,16 @@
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-mdpi\\exit_foreground.png"
     },
     {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_property_graph_foreground.png.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-mdpi\\property_graph_foreground.png"
+    },
+    {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_editnode_graph.png.flat",
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-hdpi\\editnode_graph.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_property_graph_round.png.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xxxhdpi\\property_graph_round.png"
     },
     {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_delete_graph_foreground.png.flat",
@@ -364,12 +464,20 @@
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xhdpi\\change_orientation_graph_round.png"
     },
     {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_property_graph_foreground.png.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xxhdpi\\property_graph_foreground.png"
+    },
+    {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_exit_round.xml.flat",
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-anydpi-v26\\exit_round.xml"
     },
     {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_editnode_graph_round.png.flat",
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xxhdpi\\editnode_graph_round.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_property_graph_round.png.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-hdpi\\property_graph_round.png"
     },
     {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_change_orientation_graph.png.flat",
@@ -408,24 +516,36 @@
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_editnode_graph_foreground.png.flat",
-        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-mdpi\\editnode_graph_foreground.png"
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_property_graph.png.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xhdpi\\property_graph.png"
     },
     {
-        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_link_graph.png.flat",
-        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-hdpi\\link_graph.png"
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_editnode_graph_foreground.png.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-mdpi\\editnode_graph_foreground.png"
     },
     {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_change_orientation_graph_round.png.flat",
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-mdpi\\change_orientation_graph_round.png"
     },
     {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_link_graph.png.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-hdpi\\link_graph.png"
+    },
+    {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_change_orientation_graph.xml.flat",
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-anydpi-v26\\change_orientation_graph.xml"
     },
     {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_list_graph_foreground.png.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xxxhdpi\\list_graph_foreground.png"
+    },
+    {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_orientation_graph.png.flat",
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-hdpi\\orientation_graph.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_list_graph_round.png.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-mdpi\\list_graph_round.png"
     },
     {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_delete_graph_foreground.png.flat",
@@ -444,6 +564,10 @@
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xhdpi\\editnode_graph.png"
     },
     {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_property_graph_foreground.png.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xxxhdpi\\property_graph_foreground.png"
+    },
+    {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_change_orientation_graph_foreground.png.flat",
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-mdpi\\change_orientation_graph_foreground.png"
     },
@@ -456,12 +580,12 @@
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xxxhdpi\\link_graph_foreground.png"
     },
     {
-        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_link_graph_round.png.flat",
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xhdpi\\link_graph_round.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
@@ -474,6 +598,10 @@
     {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_graph_edit2.xml.flat",
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\layout\\activity_graph_edit2.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_list_graph.png.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xhdpi\\list_graph.png"
     },
     {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\drawable_editnode_graph_background.xml.flat",
@@ -498,6 +626,14 @@
     {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_link_graph_round.xml.flat",
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-anydpi-v26\\link_graph_round.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_property_graph.png.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-hdpi\\property_graph.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_list_graph_round.png.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xxxhdpi\\list_graph_round.png"
     },
     {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_plus_graph_round.png.flat",
@@ -530,6 +666,14 @@
     {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_orientation_graph.png.flat",
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xxxhdpi\\orientation_graph.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_list_graph.xml.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-anydpi-v26\\list_graph.xml"
+    },
+    {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_property_graph_round.xml.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-anydpi-v26\\property_graph_round.xml"
     },
     {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_plus_graph.xml.flat",
@@ -574,5 +718,9 @@
     {
         "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_plus_graph_round.png.flat",
         "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\mipmap-xhdpi\\plus_graph_round.png"
+    },
+    {
+        "merged": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\build\\intermediates\\merged_res\\debug\\drawable_property_graph_background.xml.flat",
+        "source": "F:\\MobileApp\\ForWidows\\Lab3-Lab4-GraphBuilder-sidorov493\\Lab3-Lab4-GraphBuilder-sidorov493\\app\\src\\main\\res\\drawable\\property_graph_background.xml"
     }
 ]

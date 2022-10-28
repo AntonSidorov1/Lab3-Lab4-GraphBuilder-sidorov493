@@ -79,8 +79,8 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="H:\Иконки\Изменить ориентацию ребра.png" />
-                                                <entry key="scalingPercent" value="76" />
+                                                <entry key="imagePath" value="H:\Иконки\Свойства графа.png" />
+                                                <entry key="scalingPercent" value="83" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -112,7 +112,7 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="outputName" value="change_orientation_graph" />
+                                      <entry key="outputName" value="property_graph" />
                                     </map>
                                   </option>
                                 </PersistentState>

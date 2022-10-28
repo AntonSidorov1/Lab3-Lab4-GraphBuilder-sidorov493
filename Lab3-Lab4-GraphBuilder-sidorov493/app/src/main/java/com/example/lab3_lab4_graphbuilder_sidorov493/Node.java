@@ -14,6 +14,18 @@ public class Node extends GraphElement {
         return "Node" + String.valueOf(id());
     }
 
+    @Override
+    public GraphElement CopyElement() {
+        return new Node(this, GetGraph());
+    }
+
+    @Override
+    public GraphElement CopyElement(Graph graph) {
+        Node node = CopyElement().Node();
+        node.SetGraph(graph);
+        return node;
+    }
+
     public int ID()
     {
         try {
@@ -29,11 +41,6 @@ public class Node extends GraphElement {
     public Graph GetGraph()
     {
         return  graph;
-    }
-
-    public Graph Graph()
-    {
-        return  GetGraph();
     }
 
     public void SetGraph(Graph graph)
@@ -94,4 +101,6 @@ public class Node extends GraphElement {
     {
         SetNode(node.X, node.Y, node.GetName());
     }
+
+
 }

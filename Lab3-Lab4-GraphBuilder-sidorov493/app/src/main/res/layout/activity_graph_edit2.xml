@@ -94,6 +94,22 @@
                         android:foreground="@mipmap/change_orientation_graph"
                         android:onClick="ChangeOrientationLink"
                         android:text="Button" />
+
+                    <Button
+                        android:id="@+id/button12"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:foreground="@mipmap/list_graph"
+                        android:onClick="List_Click"
+                        android:text="Button" />
+
+                    <Button
+                        android:id="@+id/button14"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:foreground="@mipmap/property_graph"
+                        android:onClick="GraphProperty"
+                        android:text="Button" />
                 </LinearLayout>
             </ScrollView>
         </LinearLayout>

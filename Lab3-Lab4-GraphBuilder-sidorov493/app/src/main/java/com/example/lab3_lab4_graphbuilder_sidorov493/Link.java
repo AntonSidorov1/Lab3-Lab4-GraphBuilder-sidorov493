@@ -5,14 +5,64 @@ import java.util.ArrayList;
 public class Link extends GraphElement {
     Graph graph;
     public float Value = 0.0f;
+    public float GetValue()
+    {
+        return Value;
+    }
+    public String GetTextValue()
+    {
+        return String.valueOf(GetValue());
+    }
+    public void SetValue(float value)
+    {
+        Value = value;
+    }
+    public void SetValue(String value)
+    {
+        SetValue(Float.valueOf(value));
+    }
+
     public boolean Orientation = false;
     public String Text = "";
+
+    public void SetText(String text)
+    {
+        Text = text;
+    }
+
+    public String GetText()
+    {
+        return  Text;
+    }
+
+    public boolean TextVisible = false;
+
     public boolean ValueVisible = false;
     ArrayList<Node> nodes = new ArrayList<>();
 
     @Override
     public String GetNameFromID() {
         return GetName();
+    }
+
+    @Override
+    public GraphElement CopyElement() {
+        Link link = new Link(GetGraph());
+        link.sourceID = this.sourceID;
+        link.targetID = this.targetID;
+        link.Orientation = this.Orientation;
+        link.Text = Text;
+        link.Value = Value;
+        link.TextVisible = TextVisible;
+        link.ValueVisible = ValueVisible;
+        return link;
+    }
+
+    @Override
+    public GraphElement CopyElement(Graph graph) {
+        Link node = CopyElement().Link();
+        node.SetGraph(graph);
+        return node;
     }
 
     public void DecrimentAfterID(int id)
@@ -34,7 +84,7 @@ public class Link extends GraphElement {
         SetNodes();
     }
 
-    public  void ChangeOrientationLink()
+    public void ChangeOrientationLink()
     {
         ChangeNode();
     }
@@ -125,7 +175,8 @@ public class Link extends GraphElement {
 
     public Boolean ContainsNode(int node)
     {
-        return IDs.contains(node);
+        boolean have = IDs.contains(node);
+        return have;
     }
 
     public Boolean ContainsNodes(Node node1, Node node2)
@@ -135,14 +186,20 @@ public class Link extends GraphElement {
 
     public Boolean ContainsNodes(int node1, int node2)
     {
-        return ContainsNode(node1) && ContainsNode(node2);
+        boolean have = ContainsNode(node1) && ContainsNode(node2);
+        return have;
     }
 
     public Link(Graph graph, int source, int target)
     {
+        this(graph);
+        SetNodes(source, target);
+    }
+
+    public Link(Graph graph)
+    {
         super("");
         SetGraph(graph);
-        SetNodes(source, target);
     }
 
     public Link(Graph graph, int source, int target, float value)
@@ -155,7 +212,7 @@ public class Link extends GraphElement {
 
     @Override
     public String TypeText() {
-        return "Связь (Link)";
+        return "Связь/Ребро (Link)";
     }
 
     @Override
@@ -165,5 +222,10 @@ public class Link extends GraphElement {
             line+=">";
         String name = source.GetName() + " " + line + " " + target.GetName();
         return name;
+    }
+
+    @Override
+    public Graph GetGraph() {
+        return  graph;
     }
 }

@@ -21,6 +21,8 @@ public abstract class GraphElement {
         SetTimeStamp(new Date());
     }
 
+    public abstract Graph GetGraph();
+
     public String TimeStamp;
 
     public void SetdateTime(String date)
@@ -61,17 +63,28 @@ public abstract class GraphElement {
         return this instanceof Graph;
     }
 
-    public Node Node()
+    public Graph ToGraph() {return  (Graph) this;}
+
+    public Node ToNode()
     {
         return (Node)this;
     }
 
+    public Node Node()
+    {
+        return ToNode();
+    }
+
     public Link Link() {
+        return ToLink();
+    }
+
+    public Link ToLink() {
         return (Link) this;
     }
 
     public Graph Graph() {
-        return (Graph) this;
+        return ToGraph();
     }
 
     private int API_ID = -1;
@@ -113,5 +126,22 @@ public abstract class GraphElement {
     }
 
     public abstract String GetNameFromID();
+
+
+    public abstract GraphElement CopyElement();
+
+    public abstract GraphElement CopyElement(Graph graph);
+
+    public boolean EqualsTypes(GraphElement element)
+    {
+        if(this.IsGraph() && element.IsGraph())
+            return true;
+        else if (this.IsNode() && element.IsNode())
+            return true;
+        else if (this.IsLink() && element.IsLink())
+            return true;
+        else
+            return false;
+    }
 
 }

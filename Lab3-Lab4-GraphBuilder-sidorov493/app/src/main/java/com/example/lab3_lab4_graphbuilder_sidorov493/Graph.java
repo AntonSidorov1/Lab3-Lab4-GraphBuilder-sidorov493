@@ -10,7 +10,7 @@ public class Graph extends GraphElement {
     }
 
 
-    private ArrayList<Node> nodes = new ArrayList<>();
+    public ArrayList<Node> nodes = new ArrayList<>();
     public Node GetNode(int id)
     {
         return nodes.get(id);
@@ -120,7 +120,7 @@ public class Graph extends GraphElement {
         return nodes.size();
     }
 
-    private ArrayList<Link> links = new ArrayList<>();
+    public ArrayList<Link> links = new ArrayList<>();
     public Link GetLink(int id)
     {
         return links.get(id);
@@ -147,6 +147,50 @@ public class Graph extends GraphElement {
         Node node = GetNode(index);
         node.SetNode(node1);
         return node;
+    }
+
+    public Graph GetGraph()
+    {
+        return this;
+    }
+
+    public Link SetLink(int index, Link link)
+    {
+        Graph graph = GetGraph();
+        Link l = graph.GetLink(index);
+        l.Orientation = link.Orientation;
+        l.sourceID = link.sourceID;
+        l.targetID = link.targetID;
+        l.Text = link.Text;
+        l.Value = link.Value;
+        l.TextVisible = link.TextVisible;
+        l.ValueVisible = link.ValueVisible;
+        for(int i = 0; i < graph.LinkCount(); i++)
+        {
+            Link l1 = graph.GetLink(i);
+            if(i != index)
+                if(!l1.Orientation)
+                {
+                    if(l1.ContainsNodes(l.sourceID, l.targetID))
+                    {
+                        DeleteLink(index);
+                        return null;
+                    }
+                    else
+                    {
+
+                    }
+                }
+                else
+                {
+                    if(l1.sourceID == l.sourceID && l1.targetID == l.targetID)
+                    {
+                        DeleteLink(index);
+                        return  null;
+                    }
+                }
+        }
+        return  l;
     }
 
     public Link AddLink(int source, int target, float value, Boolean orientation)
@@ -279,9 +323,54 @@ public class Graph extends GraphElement {
         return "graph"+String.valueOf(id());
     }
 
+    @Override
+    public GraphElement CopyElement() {
+        Graph graph = new Graph(GetName());
+
+        for(int i = 0; i < NodeCount(); i++)
+        {
+            graph.AddNode(GetNode(i).CopyElement().Node());
+        }
+
+        for(int i = 0; i < LinkCount(); i++)
+        {
+            graph.AddLink(GetLink(i).CopyElement().Link());
+        }
+
+        return graph;
+    }
+
     public boolean HaveNode(int index)
     {
         return index >-1 && index < NodeCount();
+    }
+
+    public GraphElement_List GetList(GraphElementName name)
+    {
+        return new GraphElement_List(this, name);
+    }
+
+    public Link AddLink(Link link)
+    {
+        Link result = AddLink(link.sourceID, link.targetID, link.Orientation);
+        result = SetLink(result.id(), link);
+        return result;
+    }
+
+    @Override
+    public GraphElement CopyElement(Graph graph) {
+        graph.ClearNodes();
+        for(int i = 0; i < NodeCount(); i++)
+        {
+            graph.AddNode(GetNode(i).CopyElement().Node());
+        }
+
+        for(int i = 0; i < LinkCount(); i++)
+        {
+            graph.AddLink(GetLink(i).CopyElement().Link());
+        }
+
+        return graph;
     }
 
 }

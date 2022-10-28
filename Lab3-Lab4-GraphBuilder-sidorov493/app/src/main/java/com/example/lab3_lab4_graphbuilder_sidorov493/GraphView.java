@@ -58,6 +58,23 @@ public class GraphView extends SurfaceView
     {
         if(element.IsNode())
             SetNode(element.Node());
+        else if(element.IsLink())
+        {
+            try {
+
+                Link link1 = GrapsParams.GraphElement.Link();
+                Link link = graph.SetLink(selectedNowLink, link1);
+                link.Orientation = link1.Orientation;
+                link.Value = link1.Value;
+                link.Text = link1.Text;
+                link.ValueVisible = link1.ValueVisible;
+                link.TextVisible = link1.TextVisible;
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
     }
 
     public Boolean Selection()
@@ -177,6 +194,7 @@ public class GraphView extends SurfaceView
                     if(l1.ContainsNodes(l.sourceID, l.targetID));
                     {
                         DeleteLink(selectedNowLink);
+                        selectedNowLink = -1;
                         SetGraph(graph);
                         return null;
                     }
@@ -186,6 +204,7 @@ public class GraphView extends SurfaceView
                     if(l1.sourceID == l.sourceID && l1.targetID == l.targetID)
                     {
                         DeleteLink(selectedNowLink);
+                        selectedNowLink = -1;
                         SetGraph(graph);
                         return  null;
                     }
@@ -350,9 +369,9 @@ public class GraphView extends SurfaceView
             p.setStyle(Paint.Style.FILL);
             for (int i = 0; i < links; i++) {
                 try {
-
-                    if (i == selectedNowLink) p.setColor(Select2.GetBorderColor());
-                    else p.setColor(NoSelect.GetBorderColor());
+                    ColorNode color;
+                    if(i == selectedNowLink) color = Select2;
+                    else color = NoSelect;
 
                     Link l = graph.GetLink(i);
                     Node source = l.Source();
@@ -362,6 +381,9 @@ public class GraphView extends SurfaceView
                     float sy = source.Y - dY;
                     float tx = target.X - dX;
                     float ty = target.Y - dY;
+
+                    p.setStyle(Paint.Style.FILL);
+                    p.setColor(color.GetBorderColor());
 
                     canvas.drawLine(sx, sy, tx, ty, p);
                     if (l.Orientation) {
@@ -385,8 +407,6 @@ public class GraphView extends SurfaceView
                     float y0 = cy - halfside;
                     float y1 = cy + halfside;
 
-
-                    ColorNode color;
                     if(i == selectedNowLink) color = Select2;
                     else color = Select1;
 
@@ -397,6 +417,35 @@ public class GraphView extends SurfaceView
                     p.setStyle(Paint.Style.STROKE);
                     p.setColor(color.GetBorderColor());
                     canvas.drawRect(x0, y0, x1, y1, p);
+                    float width = p.getStrokeWidth();
+                    p.setStrokeWidth(width/2f);
+                    p.setTextSize(p.getStrokeWidth()*10f);
+                    p.setColor(Color.BLACK);
+                    float length = p.getTextSize()/2f;
+                    float length1 = 1f;
+                    if(l.TextVisible)
+                    {
+
+                        float yv = y1;
+                        if(l.sourceID > l.targetID) {
+                            length1 *= (-1);
+                            yv = y0;
+                        }
+
+                        canvas.drawText(l.Text, x0 - length, yv+(p.getStrokeWidth()*10f*length1), p);
+                    }
+                    if(l.ValueVisible)
+                    {
+                        if(l.sourceID > l.targetID)
+                            length*=(-1);
+                        float yv = y0;
+                        if(l.sourceID > l.targetID)
+                        yv = y1;
+                        canvas.drawText(String.valueOf(l.Value), x0 - (length*2f), yv, p);
+                    }
+                    p.setStrokeWidth(width);
+
+
 
                 }
                 catch(Exception ex)

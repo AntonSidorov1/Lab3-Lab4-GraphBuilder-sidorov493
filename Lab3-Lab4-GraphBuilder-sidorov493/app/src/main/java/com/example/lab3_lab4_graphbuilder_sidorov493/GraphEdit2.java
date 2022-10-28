@@ -3,9 +3,12 @@ package com.example.lab3_lab4_graphbuilder_sidorov493;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintSet;
 
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -97,11 +100,20 @@ public class GraphEdit2 extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        if (requestCode==555 || resultCode == 555) // Проверяем код результата (2-ая Activity была запущена с кодом 555)
+        if(requestCode==554 || resultCode == 554)
+        {
+            graphs.invalidate();
+        }
+        else if (requestCode==555 || resultCode == 555) // Проверяем код результата (2-ая Activity была запущена с кодом 555)
         {
             if (data != null) // Вернула ли значение вторая Activity нам Intent с данными, или, просто, закрылась
             {
-                graphs.SetGraphElement(GrapsParams.GraphElement);
+                GraphElement element = GrapsParams.GraphElement;
+                if(element.IsNode() || element.IsLink())
+                graphs.SetGraphElement(element);
+                else if(element.IsGraph())
+                    graphs.SetGraph(element.ToGraph());
+
             }
         }
         else if(requestCode==556|| resultCode == 556)
@@ -127,5 +139,53 @@ public class GraphEdit2 extends AppCompatActivity {
     {
         graphs.ChangeOrientationLink();
     }
+    
+    public Context getActivity()
+    {
+        return this;
+    }
 
+    public void List_Click(View v)
+    {
+        AlertDialog.Builder bld = new AlertDialog.Builder(this);
+
+        bld.setPositiveButton("Узлы графа", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                GrapsParams.graphList = new GraphElement_List(graphs.GetGraph(), GraphElementName.Node);
+                StartList(v);
+            }
+        });
+
+        bld.setNegativeButton("Рёбра (связи) графа", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                GrapsParams.graphList = new GraphElement_List(graphs.GetGraph(), GraphElementName.Link);
+                StartList(v);
+            }
+        });
+        bld.setCancelable(true);
+
+
+        AlertDialog dlg = bld.create();
+        dlg.setTitle("Список элементов графа");
+        dlg.setMessage("Список элементов графа");
+
+        dlg.show();
+    }
+
+
+    public void StartList(View v)
+    {
+        Intent i =new Intent(this, GraphElementsListActivity.class);
+        GrapsParams.GraphElement = graphs.GetSelected();
+        startActivityForResult(i, 100);
+    }
+
+    public void GraphProperty(View v)
+    {
+        Intent i =new Intent(this, GraphElementEdit.class);
+        GrapsParams.GraphElement = graphs.GetGraph();
+        startActivityForResult(i, 100);
+    }
 }
