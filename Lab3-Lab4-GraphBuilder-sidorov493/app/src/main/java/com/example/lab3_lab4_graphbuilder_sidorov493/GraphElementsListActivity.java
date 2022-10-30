@@ -34,10 +34,20 @@ public class GraphElementsListActivity extends AppCompatActivity {
 
     ArrayAdapter<GraphElement> list;
 
+    void update_graphs()
+    {
+
+        GrapsParams.graphs = new GraphElement_List(GrapsParams.DB.GetListGraphs());
+        GrapsParams.graphList = new GraphElement_List(GrapsParams.graphs);
+        graphs.clear();
+        graphs.addListGraphs(GrapsParams.graphList);
+        update_list();
+    }
 
     void update_list()
     {
 
+        if(!graphs.IsGraph())
         graphs.SetGraph(graph);
         list.notifyDataSetChanged();
     }
@@ -74,10 +84,25 @@ public class GraphElementsListActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent =new Intent(GetContext(), GraphElementEdit.class);
                 GrapsParams.GraphElement = graphs.get(i);
+                if(GrapsParams.GraphElement.IsGraph())
+                {
+                    Graph graph = GrapsParams.GraphElement.Graph();
+                    GrapsParams.NowGraph = graph;
+                    GrapsParams.Run_Graph = true;
+                    graph.ClearNodes();
+                    GrapsParams.DB.GetListNodes(graph);
+                    GrapsParams.DB.GetListLinks(graph);
+                    Intent intent1 =new Intent(GetContext(), GraphEdit2.class);
+                    startActivityForResult(intent1, 100);
+                    return;
+                }
                 startActivityForResult(intent, 100);
             }
         });
 
+        if(GrapsParams.graphList.IsGraph())
+            update_graphs();
+        else
         update_list();
     }
 
@@ -118,7 +143,7 @@ public class GraphElementsListActivity extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        if (requestCode==555 || resultCode == 555) // Проверяем код результата (2-ая Activity была запущена с кодом 555)
+        if (requestCode==555 || resultCode == 555 || requestCode==550 || resultCode == 550) // Проверяем код результата (2-ая Activity была запущена с кодом 555)
         {
             if (data != null) // Вернула ли значение вторая Activity нам Intent с данными, или, просто, закрылась
             {
@@ -166,6 +191,13 @@ public class GraphElementsListActivity extends AppCompatActivity {
                         }
                     }
                 }
+                else if(GrapsParams.graphList.IsGraph())
+                {
+                    Graph graph = GrapsParams.GraphElement.Graph();
+                    GrapsParams.DB.upload_graph(graph);
+                    update_graphs();
+                    return;
+                }
             }
         }
         else if(requestCode==556|| resultCode == 556)
@@ -176,8 +208,15 @@ public class GraphElementsListActivity extends AppCompatActivity {
                     int id = GrapsParams.elementID();
                     if (GrapsParams.GraphElement.IsNode()) {
                         graph.DeleteNode(id);
-                    } else {
+                    } else if(GrapsParams.GraphElement.IsLink()) {
                         graph.DeleteLink(id);
+                    }
+                    else if(GrapsParams.GraphElement.IsGraph())
+                    {
+                        Graph graph = GrapsParams.GraphElement.Graph();
+                        GrapsParams.DB.delete_graph(graph);
+                        update_graphs();
+                        return;
                     }
                 }
             }
@@ -186,7 +225,10 @@ public class GraphElementsListActivity extends AppCompatActivity {
 
             }
         }
+        if(GrapsParams.graphList.IsGraph())
+            update_graphs();
 
+        else
         update_list();
 
         super.onActivityResult(requestCode,resultCode,data);
@@ -196,6 +238,18 @@ public class GraphElementsListActivity extends AppCompatActivity {
     {
         Intent i =new Intent(this, GraphElementEdit.class);
         GrapsParams.GraphElement = graphs.add();
+        if(GrapsParams.GraphElement.IsGraph())
+        {
+            Graph graph = GrapsParams.GraphElement.Graph();
+            GrapsParams.NowGraph = graph;
+            GrapsParams.Run_Graph = true;
+            graph.ClearNodes();
+            GrapsParams.DB.GetListNodes(graph);
+            GrapsParams.DB.GetListLinks(graph);
+            Intent intent1 =new Intent(GetContext(), GraphEdit2.class);
+            startActivityForResult(intent1, 100);
+            return;
+        }
         startActivityForResult(i, 100);
     }
 

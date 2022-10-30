@@ -507,6 +507,12 @@ public class GraphView extends SurfaceView
                 }
             }
 
+            NameView();
+            if(graph.Get_API_ID() > -1)
+            {
+                Save();
+            }
+
             return;
         }
         catch(Exception ex)
@@ -689,5 +695,20 @@ public class GraphView extends SurfaceView
         }
 
         return super.onTouchEvent(event);
+    }
+
+    public String GetName()
+    {
+        return graph.GetName();
+    }
+
+    public void NameView()
+    {
+
+    }
+
+    public void Save()
+    {
+
     }
 }

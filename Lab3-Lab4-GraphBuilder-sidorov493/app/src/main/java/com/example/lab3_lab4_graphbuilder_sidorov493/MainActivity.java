@@ -27,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
                 Exit_Click(view);
             }
         });
+
+        GrapsParams.DB = DB_Graphs.CreateDB(this, "graps.db");
+        GrapsParams.graphs = new GraphElement_List(GrapsParams.DB.GetListGraphs());
     }
 
     @Override
@@ -86,6 +89,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void GraphList(View v)
+    {
+        GrapsParams.graphList = new GraphElement_List(GrapsParams.graphs);
+        Intent i =new Intent(this, GraphElementsListActivity.class);
+        startActivityForResult(i, 100);
+    }
 
 
 }

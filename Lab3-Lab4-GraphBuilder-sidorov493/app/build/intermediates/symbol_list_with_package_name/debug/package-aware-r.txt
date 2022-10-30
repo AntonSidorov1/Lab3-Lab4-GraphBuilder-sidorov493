@@ -2533,6 +2533,7 @@ id DateTimeText
 id ElementType
 id ExitButton
 id FUNCTION
+id GraphNameView
 id GraphPanel
 id META
 id MainPanel

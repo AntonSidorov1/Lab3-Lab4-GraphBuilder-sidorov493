@@ -165,6 +165,7 @@ public class Graph extends GraphElement {
         l.Value = link.Value;
         l.TextVisible = link.TextVisible;
         l.ValueVisible = link.ValueVisible;
+        l.Set_API_ID(link.Get_API_ID());
         for(int i = 0; i < graph.LinkCount(); i++)
         {
             Link l1 = graph.GetLink(i);
@@ -191,6 +192,16 @@ public class Graph extends GraphElement {
                 }
         }
         return  l;
+    }
+
+    public int IdNodeFromApi(int api)
+    {
+        for(int i = 0; i< NodeCount(); i++)
+        {
+            if(GetNode(i).Get_API_ID() == api)
+                return i;
+        }
+        return  -1;
     }
 
     public Link AddLink(int source, int target, float value, Boolean orientation)

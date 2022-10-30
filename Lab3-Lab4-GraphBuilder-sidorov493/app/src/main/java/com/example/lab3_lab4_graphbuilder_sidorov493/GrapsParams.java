@@ -13,4 +13,12 @@ public class GrapsParams {
     public static GraphElement_List graphList;
 
     public static GraphElement GraphCopy;
+
+    public static DB_Graphs DB;
+
+    public static GraphElement_List graphs;
+
+    public static boolean Run_Graph = false;
+
+    public static Graph NowGraph;
 }

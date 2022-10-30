@@ -33,7 +33,7 @@ public class GraphElementEdit extends AppCompatActivity {
 
     CheckBox OrientationGraph;
     TextVisibleView LinkText, LinkValue;
-    Button copy, past;
+    Button copy, past, toGraph;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -225,6 +225,38 @@ public class GraphElementEdit extends AppCompatActivity {
         });
         mainPanel.addView(copy);
         mainPanel.addView(past);
+
+        toGraph = new Button(this);
+        toGraph.setText("К графу");
+        toGraph.setLayoutParams(params);
+        mainPanel.addView(toGraph);
+        toGraph.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ToGraph(view);
+            }
+        });
+
+    }
+
+    public void ToGraph (View v)
+    {
+        if(GrapsParams.Run_Graph)
+            finish();
+        else {
+            Graph graph = new Graph();
+            if (GrapsParams.GraphElement.IsGraph()) {
+                graph = GrapsParams.GraphElement.Graph();
+            }
+            else
+            {
+                graph = GrapsParams.GraphElement.GetGraph();
+            }
+            GrapsParams.NowGraph = graph;
+            Intent i = new Intent(this, GraphEdit2.class);
+            GrapsParams.Run_Graph = true;
+            startActivity(i);
+        }
     }
 
     public void UpdateElement()
@@ -330,6 +362,10 @@ public class GraphElementEdit extends AppCompatActivity {
 
                 Graph node = graphElement.Graph();
                 node.SetName(name);
+
+            Graph graph = node;
+            //if(node.Get_API_ID() > -1)
+            //GrapsParams.DB.upload_graph(graph);
         }
 
         GrapsParams.GraphElement = graphElement;
@@ -389,8 +425,10 @@ public class GraphElementEdit extends AppCompatActivity {
     {
         try {
 
+            int id = graphElement.Get_API_ID();
             if (graphElement.EqualsTypes(GrapsParams.GraphCopy)) {
                 graphElement = GrapsParams.GraphCopy.CopyElement();
+                graphElement.Set_API_ID(id);
                 UpdateElement();
             }
         }

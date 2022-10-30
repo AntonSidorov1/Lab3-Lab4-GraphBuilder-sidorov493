@@ -28,6 +28,9 @@ com/example/lab3_lab4_graphbuilder_sidorov493/GraphEdit2.java
  com.example.lab3_lab4_graphbuilder_sidorov493.GraphEdit2$1
  com.example.lab3_lab4_graphbuilder_sidorov493.GraphEdit2$2
  com.example.lab3_lab4_graphbuilder_sidorov493.GraphEdit2$3
+ com.example.lab3_lab4_graphbuilder_sidorov493.GraphEdit2$4
+ com.example.lab3_lab4_graphbuilder_sidorov493.GraphEdit2$5
+ com.example.lab3_lab4_graphbuilder_sidorov493.GraphEdit2$6
 com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementName.java
  com.example.lab3_lab4_graphbuilder_sidorov493.GraphElementName
 com/example/lab3_lab4_graphbuilder_sidorov493/Node.java
@@ -42,6 +45,7 @@ com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementEdit.java
  com.example.lab3_lab4_graphbuilder_sidorov493.GraphElementEdit$4
  com.example.lab3_lab4_graphbuilder_sidorov493.GraphElementEdit$5
  com.example.lab3_lab4_graphbuilder_sidorov493.GraphElementEdit$6
+ com.example.lab3_lab4_graphbuilder_sidorov493.GraphElementEdit$7
 com/example/lab3_lab4_graphbuilder_sidorov493/GrapsParams.java
  com.example.lab3_lab4_graphbuilder_sidorov493.GrapsParams
 com/example/lab3_lab4_graphbuilder_sidorov493/DB_Graphs.java

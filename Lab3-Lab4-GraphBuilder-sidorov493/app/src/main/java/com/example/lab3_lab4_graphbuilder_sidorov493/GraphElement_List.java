@@ -54,6 +54,23 @@ public class GraphElement_List extends ArrayList<GraphElement> {
 
     }
 
+    public void addListGraphs(GraphElement_List list)
+    {
+        if(!list.IsGraph())
+            return;
+        for(int i = 0; i < list.size(); i++)
+        {
+            add(list.get(i));
+        }
+        elementName = GraphElementName.Graph;
+    }
+
+    public GraphElement_List(GraphElement_List list)
+    {
+        this();
+        addListGraphs(list);
+    }
+
     public boolean addListNodes(@NonNull ArrayList<Node> graphs) {
         return super.addAll(graphs);
     }

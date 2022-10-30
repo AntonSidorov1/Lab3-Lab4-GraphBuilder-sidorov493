@@ -17,12 +17,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class GraphEdit2 extends AppCompatActivity {
 
     Button exit;
     GraphView graphs;
     LinearLayout panelGraphs;
+    TextView GraphNameView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,13 +38,33 @@ public class GraphEdit2 extends AppCompatActivity {
                 Exit_Click(view);
             }
         });
+        GraphNameView = findViewById(R.id.GraphNameView);
 
         //graphs = findViewById(R.id.GraphsPanel);
-        graphs = new GraphView(this);
+        graphs = new GraphView(this)
+        {
+            @Override
+            public void NameView() {
+                GraphNameView.setText(GetName());
+            }
+
+            @Override
+            public void Save() {
+                GrapsParams.DB.upload_graph(GetGraph());
+
+                GrapsParams.graphs = new GraphElement_List(GrapsParams.DB.GetListGraphs());
+                GrapsParams.graphList = new GraphElement_List(GrapsParams.graphs);
+            }
+        };
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
         panelGraphs = findViewById(R.id.GraphPanel);
         panelGraphs.addView(graphs);
         graphs.setLayoutParams(params);
+        if(GrapsParams.Run_Graph)
+        {
+            graphs.SetGraph(GrapsParams.NowGraph);
+            GrapsParams.Run_Graph = false;
+        }
     }
 
 
@@ -72,6 +94,9 @@ public class GraphEdit2 extends AppCompatActivity {
 
     public void Exit_Click(View v)
     {
+        GrapsParams.NowGraph = graphs.GetGraph();
+
+
         finish();
     }
 
@@ -100,19 +125,49 @@ public class GraphEdit2 extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        GrapsParams.Run_Graph = false;
         if(requestCode==554 || resultCode == 554)
         {
             graphs.invalidate();
         }
-        else if (requestCode==555 || resultCode == 555) // Проверяем код результата (2-ая Activity была запущена с кодом 555)
+        else if (requestCode==555 || resultCode == 555 || requestCode==550 || resultCode == 550) // Проверяем код результата (2-ая Activity была запущена с кодом 555)
         {
             if (data != null) // Вернула ли значение вторая Activity нам Intent с данными, или, просто, закрылась
             {
                 GraphElement element = GrapsParams.GraphElement;
                 if(element.IsNode() || element.IsLink())
                 graphs.SetGraphElement(element);
-                else if(element.IsGraph())
+                else if(element.IsGraph()) {
                     graphs.SetGraph(element.ToGraph());
+                    int api = element.Get_API_ID();
+                    if(api > -1)
+                    {
+                        GrapsParams.DB.upload_graph(element.Graph());
+                    }
+                    else
+                    {
+                        AlertDialog.Builder bld = new AlertDialog.Builder(this);
+
+                        bld.setPositiveButton("Нет",
+                                new DialogInterface.OnClickListener()
+                                {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        dialog.cancel(); // Закрываем диалоговое окно
+                                    }
+                                });
+                        bld.setNegativeButton("Да", new DialogInterface.OnClickListener(){
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                GrapsParams.DB.upload_graph(element.Graph());
+                            }
+                        });
+                        AlertDialog dlg = bld.create();
+                        dlg.setTitle("Сохранять граф?");
+                        dlg.setMessage("Сохранять граф?");
+                        dlg.show();
+                    }
+                }
 
             }
         }
@@ -125,13 +180,20 @@ public class GraphEdit2 extends AppCompatActivity {
                 {
                     graphs.DeleteNode(id);
                 }
-                else
+                else if(GrapsParams.GraphElement.IsLink())
                 {
                     graphs.DeleteLink(id);
+                }
+                else
+                {
+                    Intent intent = getIntent();
+                    setResult(556, intent);
+                    finish();
                 }
             }
         }
 
+        graphs.invalidate();
         super.onActivityResult(requestCode,resultCode,data);
     }
 
@@ -177,6 +239,7 @@ public class GraphEdit2 extends AppCompatActivity {
 
     public void StartList(View v)
     {
+        GrapsParams.Run_Graph = true;
         Intent i =new Intent(this, GraphElementsListActivity.class);
         GrapsParams.GraphElement = graphs.GetSelected();
         startActivityForResult(i, 100);
@@ -184,6 +247,7 @@ public class GraphEdit2 extends AppCompatActivity {
 
     public void GraphProperty(View v)
     {
+        GrapsParams.Run_Graph = true;
         Intent i =new Intent(this, GraphElementEdit.class);
         GrapsParams.GraphElement = graphs.GetGraph();
         startActivityForResult(i, 100);

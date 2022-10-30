@@ -21,11 +21,6 @@
       <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex" afterDir="false" />
@@ -35,59 +30,69 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/DB_Graphs.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/DB_Graphs.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/Graph.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/GraphEdit2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/GraphEdit2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/GraphEdit2$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/GraphEdit2$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/GraphEdit2$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/GraphEdit2$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/GraphEdit2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/GraphEdit2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementEdit$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementEdit$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementEdit$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementEdit$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementEdit$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementEdit$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementEdit.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementEdit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElement_List.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElement_List.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementsListActivity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementsListActivity$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementsListActivity$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementsListActivity$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementsListActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementsListActivity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/GraphView.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/GraphView.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/GrapsParams.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/GrapsParams.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/Link.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/Link.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/MainActivity$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/MainActivity$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/MainActivity$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/MainActivity$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/MainActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/MainActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/classes/com/example/lab3_lab4_graphbuilder_sidorov493/Node.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifest/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifest/debug/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res/debug/layout_activity_graph_edit2.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res/debug/layout_activity_graph_edit2.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res/debug/layout_activity_main.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res/debug/layout_activity_main.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/debug.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/multi-v2/values.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/single/debug.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/packaged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/packaged_manifests/debug/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/c8d8dd903c0d0533dc3c07c1d825da301853c071d76ad1af41998bc60d40f044_0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/c8d8dd903c0d0533dc3c07c1d825da301853c071d76ad1af41998bc60d40f044_1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/DB_Graphs.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/DB_Graphs.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/Graph.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/Graph.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/GraphEdit2$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/GraphEdit2$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/GraphEdit2$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/GraphEdit2$2.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/GraphEdit2$3.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/GraphEdit2$3.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/GraphEdit2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/GraphEdit2.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElement.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElement.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementEdit$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementEdit$1.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementEdit$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementEdit$2.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementEdit$3.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementEdit$3.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementEdit.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementEdit.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElement_List.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElement_List.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementsListActivity$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementsListActivity$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementsListActivity$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementsListActivity$2.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementsListActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementsListActivity.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/GraphView.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/GraphView.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/GrapsParams.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/GrapsParams.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/Link.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/Link.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/MainActivity$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/MainActivity$2.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/MainActivity$3.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/MainActivity$3.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/MainActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/MainActivity.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/Node.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/example/lab3_lab4_graphbuilder_sidorov493/Node.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/d010fa1ae3c6e794cf536872ebcd3a5c4d43d13fc8a233091bac84ad63576b14_0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/d010fa1ae3c6e794cf536872ebcd3a5c4d43d13fc8a233091bac84ad63576b14_1.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/stable_resource_ids_file/debug/stableIds.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/stable_resource_ids_file/debug/stableIds.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/Lab3-Lab4-GraphBuilder-sidorov493.apk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/Lab3-Lab4-GraphBuilder-sidorov493.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/Lab3-Lab4-GraphBuilder-sidorov493.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lab3_lab4_graphbuilder_sidorov493/DB_Graphs.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lab3_lab4_graphbuilder_sidorov493/DB_Graphs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lab3_lab4_graphbuilder_sidorov493/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lab3_lab4_graphbuilder_sidorov493/Graph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lab3_lab4_graphbuilder_sidorov493/GraphEdit2.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lab3_lab4_graphbuilder_sidorov493/GraphEdit2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementEdit.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementEdit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElement_List.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElement_List.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementsListActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementsListActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lab3_lab4_graphbuilder_sidorov493/GraphView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lab3_lab4_graphbuilder_sidorov493/GraphView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lab3_lab4_graphbuilder_sidorov493/GrapsParams.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lab3_lab4_graphbuilder_sidorov493/GrapsParams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lab3_lab4_graphbuilder_sidorov493/Link.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lab3_lab4_graphbuilder_sidorov493/Link.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lab3_lab4_graphbuilder_sidorov493/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lab3_lab4_graphbuilder_sidorov493/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lab3_lab4_graphbuilder_sidorov493/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lab3_lab4_graphbuilder_sidorov493/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_graph_edit2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_graph_edit2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Диаграммы/Диаграммы и Макеты.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/../Диаграммы/Диаграммы и Макеты.drawio" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,6 +124,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="android-custom-viewC:/Users/Anton/.gradle/caches/modules-2/files-2.1/com.google.android.material/material/1.6.1/d4d703885d24c61bc0ec39a9a705969e41d773ef/material-1.6.1-sources.jar!/com/google/android/material/button/MaterialButton.java_MaterialButton_DIMENSIONS" value="1080&#10;1920" />
+    <property name="android-custom-viewC:/Users/Anton/.gradle/caches/modules-2/files-2.1/com.google.android.material/material/1.6.1/d4d703885d24c61bc0ec39a9a705969e41d773ef/material-1.6.1-sources.jar!/com/google/android/material/button/MaterialButton.java_SELECTED" value="MaterialButton" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -206,11 +213,6 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElement_List.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/lab3_lab4_graphbuilder_sidorov493/Link.java</url>
           <line>197</line>
           <option name="timeStamp" value="21" />
@@ -222,13 +224,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementEdit.java</url>
-          <line>309</line>
+          <line>341</line>
           <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementEdit.java</url>
-          <line>310</line>
-          <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/lab3_lab4_graphbuilder_sidorov493/Node.java</url>
@@ -247,15 +244,36 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementsListActivity.java</url>
-          <line>137</line>
+          <line>162</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/lab3_lab4_graphbuilder_sidorov493/Graph.java</url>
-          <line>327</line>
+          <line>338</line>
           <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementsListActivity.java</url>
+          <line>195</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementsListActivity.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/lab3_lab4_graphbuilder_sidorov493/DB_Graphs.java</url>
+          <line>368</line>
+          <option name="timeStamp" value="55" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="app">
+        <watch expression="((InvocationTargetException)ex).shadow$_klass_" custom="java.lang.reflect.InvocationTargetException" />
+        <watch expression="((InvocationTargetException)ex).backtrace" custom="java.lang.reflect.InvocationTargetException" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
