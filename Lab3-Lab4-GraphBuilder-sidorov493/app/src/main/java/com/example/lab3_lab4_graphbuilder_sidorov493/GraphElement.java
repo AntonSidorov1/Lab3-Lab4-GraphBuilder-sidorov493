@@ -35,6 +35,11 @@ public abstract class GraphElement {
         TimeStamp = new SimpleDateFormat("dd.MM.yyyy hh:mm:ss").format(date);
     }
 
+    public void SetTimeStamp(long date)
+    {
+        SetTimeStamp(new Date(date));
+    }
+
     public String GetDatetime()
     {
         return TimeStamp;
@@ -143,5 +148,15 @@ public abstract class GraphElement {
         else
             return false;
     }
+
+    public int IDinAPI = -1;
+
+    public Boolean HaveAPI()
+    {
+        return IDinAPI>-1;
+    }
+
+    public Boolean RunAPI = false;
+    public Boolean ApiReady = false;
 
 }

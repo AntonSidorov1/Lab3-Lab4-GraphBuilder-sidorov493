@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ApiMainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/ApiClose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Exit_Click"
+            android:text="Назад" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lab04_GraphBuiderAPI"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sidorov493"
+            android:textAlignment="center"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+
+        <TextView
+            android:id="@+id/sessionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Сессия: " />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/button22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="Autorization_Click"
+                    android:text="Войти/Зарегистрироваться" />
+
+                <Button
+                    android:id="@+id/button23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="GraphListOpen_Click"
+                    android:text="Список графов" />
+
+                <Button
+                    android:id="@+id/button24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="CloseSession_Click"
+                    android:text="Выйти из аккаунта" />
+
+                <Button
+                    android:id="@+id/button26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="ChangePassword"
+                    android:text="Сменить пароль" />
+
+                <Button
+                    android:id="@+id/button13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="ListSessions_Click"
+                    android:text="Список открытых сессий" />
+
+                <Button
+                    android:id="@+id/button25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="DeleteAccount_Click"
+                    android:text="Удалить аккаунт" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

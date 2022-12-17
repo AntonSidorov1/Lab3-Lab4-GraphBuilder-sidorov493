@@ -4,20 +4,84 @@ com/example/lab3_lab4_graphbuilder_sidorov493/GraphView.java
  com.example.lab3_lab4_graphbuilder_sidorov493.GraphView
 com/example/lab3_lab4_graphbuilder_sidorov493/GraphElement.java
  com.example.lab3_lab4_graphbuilder_sidorov493.GraphElement
-com/example/lab3_lab4_graphbuilder_sidorov493/Link.java
- com.example.lab3_lab4_graphbuilder_sidorov493.Link
+com/example/lab3_lab4_graphbuilder_sidorov493/TextVisibleView.java
+ com.example.lab3_lab4_graphbuilder_sidorov493.TextVisibleView
+com/example/lab3_lab4_graphbuilder_sidorov493/GraphIdView.java
+ com.example.lab3_lab4_graphbuilder_sidorov493.GraphIdView
+com/example/lab3_lab4_graphbuilder_sidorov493/Node.java
+ com.example.lab3_lab4_graphbuilder_sidorov493.Node
 com/example/lab3_lab4_graphbuilder_sidorov493/GraphElement_List.java
  com.example.lab3_lab4_graphbuilder_sidorov493.GraphElement_List
+com/example/lab3_lab4_graphbuilder_sidorov493/NodeHelper.java
+ com.example.lab3_lab4_graphbuilder_sidorov493.NodeHelper
+com/example/lab3_lab4_graphbuilder_sidorov493/GraphHelper.java
+ com.example.lab3_lab4_graphbuilder_sidorov493.GraphHelper
+com/example/lab3_lab4_graphbuilder_sidorov493/ApiHelper.java
+ com.example.lab3_lab4_graphbuilder_sidorov493.ApiHelper
+ com.example.lab3_lab4_graphbuilder_sidorov493.ApiHelper$NetOp
+com/example/lab3_lab4_graphbuilder_sidorov493/ColorNode.java
+ com.example.lab3_lab4_graphbuilder_sidorov493.ColorNode
+com/example/lab3_lab4_graphbuilder_sidorov493/LinkHelper.java
+ com.example.lab3_lab4_graphbuilder_sidorov493.LinkHelper
+com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementName.java
+ com.example.lab3_lab4_graphbuilder_sidorov493.GraphElementName
+com/example/lab3_lab4_graphbuilder_sidorov493/Link.java
+ com.example.lab3_lab4_graphbuilder_sidorov493.Link
+com/example/lab3_lab4_graphbuilder_sidorov493/BuildConfig.java
+ com.example.lab3_lab4_graphbuilder_sidorov493.BuildConfig
+com/example/lab3_lab4_graphbuilder_sidorov493/DB_Graphs.java
+ com.example.lab3_lab4_graphbuilder_sidorov493.DB_Graphs
+com/example/lab3_lab4_graphbuilder_sidorov493/Session.java
+ com.example.lab3_lab4_graphbuilder_sidorov493.Session
+com/example/lab3_lab4_graphbuilder_sidorov493/DB_Sessions.java
+ com.example.lab3_lab4_graphbuilder_sidorov493.DB_Sessions
+com/example/lab3_lab4_graphbuilder_sidorov493/UrlStorege.java
+ com.example.lab3_lab4_graphbuilder_sidorov493.UrlStorege
+com/example/lab3_lab4_graphbuilder_sidorov493/ListLinksHelper.java
+ com.example.lab3_lab4_graphbuilder_sidorov493.ListLinksHelper
+com/example/lab3_lab4_graphbuilder_sidorov493/CreateNode.java
+ com.example.lab3_lab4_graphbuilder_sidorov493.CreateNode
+com/example/lab3_lab4_graphbuilder_sidorov493/ApiMainActivity.java
+ com.example.lab3_lab4_graphbuilder_sidorov493.ApiMainActivity
+ com.example.lab3_lab4_graphbuilder_sidorov493.ApiMainActivity$1
+ com.example.lab3_lab4_graphbuilder_sidorov493.ApiMainActivity$2
 com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementsListActivity.java
  com.example.lab3_lab4_graphbuilder_sidorov493.GraphElementsListActivity
  com.example.lab3_lab4_graphbuilder_sidorov493.GraphElementsListActivity$1
+ com.example.lab3_lab4_graphbuilder_sidorov493.GraphElementsListActivity$10
+ com.example.lab3_lab4_graphbuilder_sidorov493.GraphElementsListActivity$11
+ com.example.lab3_lab4_graphbuilder_sidorov493.GraphElementsListActivity$12
  com.example.lab3_lab4_graphbuilder_sidorov493.GraphElementsListActivity$2
+ com.example.lab3_lab4_graphbuilder_sidorov493.GraphElementsListActivity$3
+ com.example.lab3_lab4_graphbuilder_sidorov493.GraphElementsListActivity$4
+ com.example.lab3_lab4_graphbuilder_sidorov493.GraphElementsListActivity$5
+ com.example.lab3_lab4_graphbuilder_sidorov493.GraphElementsListActivity$6
+ com.example.lab3_lab4_graphbuilder_sidorov493.GraphElementsListActivity$7
+ com.example.lab3_lab4_graphbuilder_sidorov493.GraphElementsListActivity$8
+ com.example.lab3_lab4_graphbuilder_sidorov493.GraphElementsListActivity$9
+com/example/lab3_lab4_graphbuilder_sidorov493/UrlActivity.java
+ com.example.lab3_lab4_graphbuilder_sidorov493.UrlActivity
 com/example/lab3_lab4_graphbuilder_sidorov493/Graph.java
  com.example.lab3_lab4_graphbuilder_sidorov493.Graph
-com/example/lab3_lab4_graphbuilder_sidorov493/ColorNode.java
- com.example.lab3_lab4_graphbuilder_sidorov493.ColorNode
-com/example/lab3_lab4_graphbuilder_sidorov493/BuildConfig.java
- com.example.lab3_lab4_graphbuilder_sidorov493.BuildConfig
+com/example/lab3_lab4_graphbuilder_sidorov493/GraphListHelper.java
+ com.example.lab3_lab4_graphbuilder_sidorov493.GraphListHelper
+com/example/lab3_lab4_graphbuilder_sidorov493/AutorizationActivity.java
+ com.example.lab3_lab4_graphbuilder_sidorov493.AutorizationActivity
+ com.example.lab3_lab4_graphbuilder_sidorov493.AutorizationActivity$1
+ com.example.lab3_lab4_graphbuilder_sidorov493.AutorizationActivity$2
+ com.example.lab3_lab4_graphbuilder_sidorov493.AutorizationActivity$3
+ com.example.lab3_lab4_graphbuilder_sidorov493.AutorizationActivity$4
+ com.example.lab3_lab4_graphbuilder_sidorov493.AutorizationActivity$5
+ com.example.lab3_lab4_graphbuilder_sidorov493.AutorizationActivity$6
+ com.example.lab3_lab4_graphbuilder_sidorov493.AutorizationActivity$7
+com/example/lab3_lab4_graphbuilder_sidorov493/ListSessionsHelper.java
+ com.example.lab3_lab4_graphbuilder_sidorov493.ListSessionsHelper
+com/example/lab3_lab4_graphbuilder_sidorov493/CreateGraph.java
+ com.example.lab3_lab4_graphbuilder_sidorov493.CreateGraph
+com/example/lab3_lab4_graphbuilder_sidorov493/CreateAccount.java
+ com.example.lab3_lab4_graphbuilder_sidorov493.CreateAccount
+com/example/lab3_lab4_graphbuilder_sidorov493/CloseSession.java
+ com.example.lab3_lab4_graphbuilder_sidorov493.CloseSession
 com/example/lab3_lab4_graphbuilder_sidorov493/MainActivity.java
  com.example.lab3_lab4_graphbuilder_sidorov493.MainActivity
  com.example.lab3_lab4_graphbuilder_sidorov493.MainActivity$1
@@ -27,16 +91,18 @@ com/example/lab3_lab4_graphbuilder_sidorov493/GraphEdit2.java
  com.example.lab3_lab4_graphbuilder_sidorov493.GraphEdit2
  com.example.lab3_lab4_graphbuilder_sidorov493.GraphEdit2$1
  com.example.lab3_lab4_graphbuilder_sidorov493.GraphEdit2$2
+ com.example.lab3_lab4_graphbuilder_sidorov493.GraphEdit2$2$1
  com.example.lab3_lab4_graphbuilder_sidorov493.GraphEdit2$3
  com.example.lab3_lab4_graphbuilder_sidorov493.GraphEdit2$4
  com.example.lab3_lab4_graphbuilder_sidorov493.GraphEdit2$5
  com.example.lab3_lab4_graphbuilder_sidorov493.GraphEdit2$6
-com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementName.java
- com.example.lab3_lab4_graphbuilder_sidorov493.GraphElementName
-com/example/lab3_lab4_graphbuilder_sidorov493/Node.java
- com.example.lab3_lab4_graphbuilder_sidorov493.Node
-com/example/lab3_lab4_graphbuilder_sidorov493/TextVisibleView.java
- com.example.lab3_lab4_graphbuilder_sidorov493.TextVisibleView
+ com.example.lab3_lab4_graphbuilder_sidorov493.GraphEdit2$7
+ com.example.lab3_lab4_graphbuilder_sidorov493.GraphEdit2$8
+ com.example.lab3_lab4_graphbuilder_sidorov493.GraphEdit2$9
+com/example/lab3_lab4_graphbuilder_sidorov493/GetSession.java
+ com.example.lab3_lab4_graphbuilder_sidorov493.GetSession
+com/example/lab3_lab4_graphbuilder_sidorov493/ListNodesHelper.java
+ com.example.lab3_lab4_graphbuilder_sidorov493.ListNodesHelper
 com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementEdit.java
  com.example.lab3_lab4_graphbuilder_sidorov493.GraphElementEdit
  com.example.lab3_lab4_graphbuilder_sidorov493.GraphElementEdit$1
@@ -46,7 +112,10 @@ com/example/lab3_lab4_graphbuilder_sidorov493/GraphElementEdit.java
  com.example.lab3_lab4_graphbuilder_sidorov493.GraphElementEdit$5
  com.example.lab3_lab4_graphbuilder_sidorov493.GraphElementEdit$6
  com.example.lab3_lab4_graphbuilder_sidorov493.GraphElementEdit$7
+ com.example.lab3_lab4_graphbuilder_sidorov493.GraphElementEdit$8
+ com.example.lab3_lab4_graphbuilder_sidorov493.GraphElementEdit$9
+com/example/lab3_lab4_graphbuilder_sidorov493/CreateLink.java
+ com.example.lab3_lab4_graphbuilder_sidorov493.CreateLink
 com/example/lab3_lab4_graphbuilder_sidorov493/GrapsParams.java
  com.example.lab3_lab4_graphbuilder_sidorov493.GrapsParams
-com/example/lab3_lab4_graphbuilder_sidorov493/DB_Graphs.java
- com.example.lab3_lab4_graphbuilder_sidorov493.DB_Graphs
+ com.example.lab3_lab4_graphbuilder_sidorov493.GrapsParams$1

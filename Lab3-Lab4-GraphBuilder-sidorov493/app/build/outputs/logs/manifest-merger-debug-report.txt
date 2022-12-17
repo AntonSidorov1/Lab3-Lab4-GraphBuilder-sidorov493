@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:2:1-32:12
+ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:2:1-50:12
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\Anton\.gradle\caches\transforms-3\4858cb7de511a4cae552cb9893054568\transformed\material-1.6.1\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Anton\.gradle\caches\transforms-3\0930f751d77031263294fd6323dd5a32\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.5.1] C:\Users\Anton\.gradle\caches\transforms-3\4cb10a8bc0bd351d0dea9ec92544794e\transformed\jetified-appcompat-resources-1.5.1\AndroidManifest.xml:17:1-22:12
@@ -44,25 +44,29 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Anton\.gradle\ca
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Anton\.gradle\caches\transforms-3\cdab6885b438a759bbebc3bab0411230\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\Anton\.gradle\caches\transforms-3\364cd11e18b25eea3f64fd0a4b722373\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\Anton\.gradle\caches\transforms-3\990035cce6f8133573ea22ca7a8dd41c\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:2:1-50:12
 	package
 		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:3:5-60
 		INJECTED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml
 		INJECTED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml
-		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:2:1-32:12
+		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:2:1-50:12
 		INJECTED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml
-		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:2:1-32:12
+		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:2:1-50:12
 		INJECTED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:5:5-30:19
+ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:7:5-48:19
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\Anton\.gradle\caches\transforms-3\4858cb7de511a4cae552cb9893054568\transformed\material-1.6.1\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\Anton\.gradle\caches\transforms-3\4858cb7de511a4cae552cb9893054568\transformed\material-1.6.1\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Anton\.gradle\caches\transforms-3\0930f751d77031263294fd6323dd5a32\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -80,51 +84,79 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\An
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.8.0] C:\Users\Anton\.gradle\caches\transforms-3\8ebde6371051716af20f395774a4b9fa\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:13:9-35
 	android:label
-		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:10:9-41
 	android:roundIcon
-		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:12:9-54
 	android:icon
-		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:9:9-43
 	android:allowBackup
-		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
-		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:11:9-68
+		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:14:9-68
+	android:networkSecurityConfig
+		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:11:9-54
+	android:usesCleartextTraffic
+		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:15:9-44
+activity#com.example.lab3_lab4_graphbuilder_sidorov493.ApiMainActivity
+ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:16:9-18:40
+	android:exported
+		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:18:13-37
+	android:name
+		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:17:13-44
+activity#com.example.lab3_lab4_graphbuilder_sidorov493.AutorizationActivity
+ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:19:9-21:40
+	android:exported
+		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:21:13-37
+	android:name
+		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:20:13-49
+activity#com.example.lab3_lab4_graphbuilder_sidorov493.UrlActivity
+ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:22:9-24:40
+	android:exported
+		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:24:13-37
+	android:name
+		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:23:13-40
+meta-data#com.google.android.actions
+ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:26:9-28:48
+	android:resource
+		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:28:13-45
+	android:name
+		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:27:13-54
 activity#com.example.lab3_lab4_graphbuilder_sidorov493.GraphElementsListActivity
-ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:12:9-14:40
+ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:30:9-32:40
 	android:exported
-		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:14:13-37
+		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:32:13-37
 	android:name
-		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:13:13-54
+		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:31:13-54
 activity#com.example.lab3_lab4_graphbuilder_sidorov493.GraphElementEdit
-ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:15:9-17:40
+ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:33:9-35:40
 	android:exported
-		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:17:13-37
+		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:35:13-37
 	android:name
-		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:16:13-45
+		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:34:13-45
 activity#com.example.lab3_lab4_graphbuilder_sidorov493.GraphEdit2
-ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:18:9-20:39
+ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:36:9-38:39
 	android:exported
-		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:20:13-36
+		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:38:13-36
 	android:name
-		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:19:13-39
+		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:37:13-39
 activity#com.example.lab3_lab4_graphbuilder_sidorov493.MainActivity
-ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:21:9-29:20
+ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:39:9-47:20
 	android:exported
-		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:23:13-36
+		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:41:13-36
 	android:name
-		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:22:13-41
+		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:40:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:24:13-28:29
+ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:42:13-46:29
 action#android.intent.action.MAIN
-ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:25:17-69
+ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:43:17-69
 	android:name
-		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:25:25-66
+		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:43:25-66
 category#android.intent.category.LAUNCHER
-ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:27:17-77
+ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:45:17-77
 	android:name
-		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:27:27-74
+		ADDED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:45:27-74
 uses-sdk
 INJECTED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml

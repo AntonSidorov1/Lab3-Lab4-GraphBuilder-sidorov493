@@ -10,81 +10,115 @@
 9        android:targetSdkVersion="32" />
 9-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml
 10
-11    <application
-11-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:5:5-30:19
-12        android:allowBackup="true"
-12-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:6:9-35
-13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.8.0] C:\Users\Anton\.gradle\caches\transforms-3\8ebde6371051716af20f395774a4b9fa\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
-14        android:debuggable="true"
-15        android:extractNativeLibs="false"
-16        android:icon="@mipmap/ic_launcher"
-16-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:7:9-43
-17        android:label="@string/app_name"
-17-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:8:9-41
-18        android:roundIcon="@mipmap/ic_launcher_round"
-18-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:9:9-54
-19        android:supportsRtl="true"
-19-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:10:9-35
-20        android:theme="@style/Theme.Lab3Lab4GraphBuildersidorov493" >
-20-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:11:9-68
-21        <activity
-21-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:12:9-14:40
-22            android:name="com.example.lab3_lab4_graphbuilder_sidorov493.GraphElementsListActivity"
-22-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:13:13-54
-23            android:exported="false" />
-23-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:14:13-37
-24        <activity
-24-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:15:9-17:40
-25            android:name="com.example.lab3_lab4_graphbuilder_sidorov493.GraphElementEdit"
-25-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:16:13-45
-26            android:exported="false" />
-26-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:17:13-37
-27        <activity
-27-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:18:9-20:39
-28            android:name="com.example.lab3_lab4_graphbuilder_sidorov493.GraphEdit2"
-28-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:19:13-39
-29            android:exported="true" />
-29-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:20:13-36
-30        <activity
-30-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:21:9-29:20
-31            android:name="com.example.lab3_lab4_graphbuilder_sidorov493.MainActivity"
-31-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:22:13-41
-32            android:exported="true" >
-32-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:23:13-36
-33            <intent-filter>
-33-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:24:13-28:29
-34                <action android:name="android.intent.action.MAIN" />
-34-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:25:17-69
-34-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:25:25-66
-35
-36                <category android:name="android.intent.category.LAUNCHER" />
-36-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:27:17-77
-36-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:27:27-74
-37            </intent-filter>
-38        </activity>
-39
-40        <provider
-40-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Anton\.gradle\caches\transforms-3\d7c4e286604b550ca22034ff7698639a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-41            android:name="androidx.startup.InitializationProvider"
-41-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Anton\.gradle\caches\transforms-3\d7c4e286604b550ca22034ff7698639a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
-42            android:authorities="com.example.lab3_lab4_graphbuilder_sidorov493.androidx-startup"
-42-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Anton\.gradle\caches\transforms-3\d7c4e286604b550ca22034ff7698639a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
-43            android:exported="false" >
-43-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Anton\.gradle\caches\transforms-3\d7c4e286604b550ca22034ff7698639a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
-44            <meta-data
-44-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Anton\.gradle\caches\transforms-3\d7c4e286604b550ca22034ff7698639a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-45                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-45-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Anton\.gradle\caches\transforms-3\d7c4e286604b550ca22034ff7698639a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
-46                android:value="androidx.startup" />
-46-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Anton\.gradle\caches\transforms-3\d7c4e286604b550ca22034ff7698639a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
-47            <meta-data
-47-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Anton\.gradle\caches\transforms-3\0b05df9a9f51e7db39f01c9159ed5b44\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-48                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-48-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Anton\.gradle\caches\transforms-3\0b05df9a9f51e7db39f01c9159ed5b44\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-49                android:value="androidx.startup" />
-49-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Anton\.gradle\caches\transforms-3\0b05df9a9f51e7db39f01c9159ed5b44\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-50        </provider>
-51    </application>
-52
-53</manifest>
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:5:5-67
+11-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:5:22-64
+12
+13    <application
+13-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:7:5-48:19
+14        android:allowBackup="true"
+14-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:8:9-35
+15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+15-->[androidx.core:core:1.8.0] C:\Users\Anton\.gradle\caches\transforms-3\8ebde6371051716af20f395774a4b9fa\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+16        android:debuggable="true"
+17        android:extractNativeLibs="false"
+18        android:icon="@mipmap/ic_launcher"
+18-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:9:9-43
+19        android:label="@string/app_name"
+19-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:10:9-41
+20        android:networkSecurityConfig="@xml/myconfig"
+20-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:11:9-54
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:12:9-54
+22        android:supportsRtl="true"
+22-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:13:9-35
+23        android:theme="@style/Theme.Lab3Lab4GraphBuildersidorov493"
+23-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:14:9-68
+24        android:usesCleartextTraffic="true" >
+24-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:15:9-44
+25        <activity
+25-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:16:9-18:40
+26            android:name="com.example.lab3_lab4_graphbuilder_sidorov493.ApiMainActivity"
+26-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:17:13-44
+27            android:exported="false" />
+27-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:18:13-37
+28        <activity
+28-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:19:9-21:40
+29            android:name="com.example.lab3_lab4_graphbuilder_sidorov493.AutorizationActivity"
+29-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:20:13-49
+30            android:exported="false" />
+30-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:21:13-37
+31        <activity
+31-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:22:9-24:40
+32            android:name="com.example.lab3_lab4_graphbuilder_sidorov493.UrlActivity"
+32-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:23:13-40
+33            android:exported="false" />
+33-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:24:13-37
+34
+35        <meta-data
+35-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:26:9-28:48
+36            android:name="com.google.android.actions"
+36-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:27:13-54
+37            android:resource="@xml/myconfig" />
+37-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:28:13-45
+38
+39        <activity
+39-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:30:9-32:40
+40            android:name="com.example.lab3_lab4_graphbuilder_sidorov493.GraphElementsListActivity"
+40-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:31:13-54
+41            android:exported="false" />
+41-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:32:13-37
+42        <activity
+42-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:33:9-35:40
+43            android:name="com.example.lab3_lab4_graphbuilder_sidorov493.GraphElementEdit"
+43-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:34:13-45
+44            android:exported="false" />
+44-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:35:13-37
+45        <activity
+45-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:36:9-38:39
+46            android:name="com.example.lab3_lab4_graphbuilder_sidorov493.GraphEdit2"
+46-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:37:13-39
+47            android:exported="true" />
+47-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:38:13-36
+48        <activity
+48-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:39:9-47:20
+49            android:name="com.example.lab3_lab4_graphbuilder_sidorov493.MainActivity"
+49-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:40:13-41
+50            android:exported="true" >
+50-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:41:13-36
+51            <intent-filter>
+51-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:42:13-46:29
+52                <action android:name="android.intent.action.MAIN" />
+52-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:43:17-69
+52-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:43:25-66
+53
+54                <category android:name="android.intent.category.LAUNCHER" />
+54-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:45:17-77
+54-->F:\MobileApp\ForWidows\Lab3-Lab4-GraphBuilder-sidorov493\Lab3-Lab4-GraphBuilder-sidorov493\app\src\main\AndroidManifest.xml:45:27-74
+55            </intent-filter>
+56        </activity>
+57
+58        <provider
+58-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Anton\.gradle\caches\transforms-3\d7c4e286604b550ca22034ff7698639a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+59            android:name="androidx.startup.InitializationProvider"
+59-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Anton\.gradle\caches\transforms-3\d7c4e286604b550ca22034ff7698639a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+60            android:authorities="com.example.lab3_lab4_graphbuilder_sidorov493.androidx-startup"
+60-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Anton\.gradle\caches\transforms-3\d7c4e286604b550ca22034ff7698639a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+61            android:exported="false" >
+61-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Anton\.gradle\caches\transforms-3\d7c4e286604b550ca22034ff7698639a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+62            <meta-data
+62-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Anton\.gradle\caches\transforms-3\d7c4e286604b550ca22034ff7698639a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+63                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+63-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Anton\.gradle\caches\transforms-3\d7c4e286604b550ca22034ff7698639a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+64                android:value="androidx.startup" />
+64-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Anton\.gradle\caches\transforms-3\d7c4e286604b550ca22034ff7698639a\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+65            <meta-data
+65-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Anton\.gradle\caches\transforms-3\0b05df9a9f51e7db39f01c9159ed5b44\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+66                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+66-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Anton\.gradle\caches\transforms-3\0b05df9a9f51e7db39f01c9159ed5b44\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+67                android:value="androidx.startup" />
+67-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Anton\.gradle\caches\transforms-3\0b05df9a9f51e7db39f01c9159ed5b44\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+68        </provider>
+69    </application>
+70
+71</manifest>

@@ -4,6 +4,30 @@ import java.util.ArrayList;
 
 public class Graph extends GraphElement {
 
+    public int nodesAPI = 0;
+    @Override
+    public Boolean HaveAPI() {
+        Boolean have = super.HaveAPI();
+        if(have) {
+            for (int i = 0; i < NodeCount(); i++) {
+                have = have && GetNode(i).HaveAPI();
+                if (!have)
+                    break;
+            }
+        }
+        return have;
+    }
+
+    public GraphElement_List GetNodes()
+    {
+        return  new GraphElement_List(this, GraphElementName.Node);
+    }
+
+    public GraphElement_List GetLinks()
+    {
+        return  new GraphElement_List(this, GraphElementName.Link);
+    }
+
     public void SetName(String name)
     {
         NameElement = name;
@@ -22,6 +46,72 @@ public class Graph extends GraphElement {
         //nodes.add(node);
         AddNode(node);
         return node;
+    }
+
+    public Node NodeFromAPI(int id_api)
+    {
+        int id = id_api;
+        for(int i = 0; i < NodeCount(); i++)
+        {
+            try
+            {
+                Node node = GetNode(i);
+                int api = node.IDinAPI;
+                if(api == id)
+                    return node;
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
+        return  null;
+    }
+
+    public int IdNodeFromAPI(int id_api)
+    {
+        try
+        {
+            return NodeFromAPI(id_api).ID();
+        }
+        catch (Exception ex)
+        {
+            return -1;
+        }
+    }
+
+    public int IdLinkFromAPI(int id_api)
+    {
+        try
+        {
+            return LinkFromAPI(id_api).ID();
+        }
+        catch (Exception ex)
+        {
+            return -1;
+        }
+    }
+
+    public Link LinkFromAPI(int id_api)
+    {
+        int id = id_api;
+        for(int i = 0; i < LinkCount(); i++)
+        {
+            try
+            {
+                Link node = GetLink(i);
+                int api = node.IDinAPI;
+                if(api == id)
+                    return node;
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
+        return  null;
     }
 
     public Node AddNode()
@@ -166,6 +256,7 @@ public class Graph extends GraphElement {
         l.TextVisible = link.TextVisible;
         l.ValueVisible = link.ValueVisible;
         l.Set_API_ID(link.Get_API_ID());
+        l.IDinAPI = link.IDinAPI;
         for(int i = 0; i < graph.LinkCount(); i++)
         {
             Link l1 = graph.GetLink(i);
@@ -348,6 +439,7 @@ public class Graph extends GraphElement {
             graph.AddLink(GetLink(i).CopyElement().Link());
         }
 
+        graph.IDinAPI = IDinAPI;
         return graph;
     }
 

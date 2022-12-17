@@ -1,6 +1,7 @@
 package com.example.lab3_lab4_graphbuilder_sidorov493;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,15 +12,20 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     Button exit;
+    TextView url;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         exit = findViewById(R.id.ExitButton);
+        url = findViewById(R.id.textUrl);
+
+        url.setText(GrapsParams.GetUrl(this));
 
         exit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,6 +36,17 @@ public class MainActivity extends AppCompatActivity {
 
         GrapsParams.DB = DB_Graphs.CreateDB(this, "graps.db");
         GrapsParams.graphs = new GraphElement_List(GrapsParams.DB.GetListGraphs());
+    }
+
+    public void ApiAddress_onClick(View v)
+    {
+        Intent i = new Intent(this, UrlActivity.class);
+        startActivityForResult(i, 100);
+    }
+
+    public void GoAPI_Click(View v)
+    {
+        GraphListAPI(v);
     }
 
     @Override
@@ -85,8 +102,18 @@ public class MainActivity extends AppCompatActivity {
 
     public void GraphCreate(View v)
     {
+        GrapsParams.API=false;
         Intent i = new Intent(this, GraphEdit2.class);
         startActivity(i);
+    }
+
+    public void GraphListAPI(View v)
+    {
+        GrapsParams.API = true;
+
+        Intent i =new Intent(this, ApiMainActivity.class);
+        startActivityForResult(i, 100);
+
     }
 
     public void GraphList(View v)
@@ -96,5 +123,11 @@ public class MainActivity extends AppCompatActivity {
         startActivityForResult(i, 100);
     }
 
-
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        url.setText(GrapsParams.Url(this));
+        GrapsParams.API = false;
+        GrapsParams.Registration = false;
+        super.onActivityResult(requestCode, resultCode, data);
+    }
 }

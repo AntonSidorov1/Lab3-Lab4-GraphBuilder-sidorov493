@@ -2523,6 +2523,8 @@ drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
+id AddElement
+id ApiClose
 id AttributesPanel
 id BOTTOM_END
 id BOTTOM_START
@@ -2530,21 +2532,30 @@ id ButtonBack1
 id CTRL
 id CloseEditorElements
 id DateTimeText
+id DomainNameText
 id ElementType
 id ExitButton
 id FUNCTION
 id GraphNameView
 id GraphPanel
+id LogIn
+id LogInRegistrate
+id LoginImputLayout
+id LoginLayout
 id META
 id MainPanel
 id NO_DEBUG
 id NameLabel
 id NameLayout
+id PasswordRegistrate
+id PortText
+id Registration
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
 id SHOW_PROGRESS
 id SYM
+id ShowPasswordRegistrate
 id TOP_END
 id TOP_START
 id TextElementID
@@ -2615,6 +2626,7 @@ id animateToEnd
 id animateToStart
 id antiClockwise
 id anticipate
+id apiAddress
 id arc
 id asConfigured
 id async
@@ -2639,7 +2651,17 @@ id button11
 id button12
 id button13
 id button14
+id button16
+id button17
+id button18
+id button19
 id button2
+id button20
+id button22
+id button23
+id button24
+id button25
+id button26
 id button3
 id button4
 id button5
@@ -2647,6 +2669,7 @@ id button6
 id button7
 id button8
 id button9
+id buttonExit
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -2674,6 +2697,7 @@ id clear_text
 id clip_horizontal
 id clip_vertical
 id clockwise
+id closeAutorization
 id closest
 id collapseActionView
 id compress
@@ -2926,6 +2950,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id sessionText
 id sharedValueSet
 id sharedValueUnset
 id shortcut
@@ -2989,8 +3014,22 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textUrl
 id textView
+id textView10
+id textView11
+id textView12
+id textView13
+id textView14
+id textView15
+id textView2
 id textView3
+id textView4
+id textView5
+id textView6
+id textView7
+id textView8
+id textView9
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3131,10 +3170,13 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_api_main
+layout activity_autorization
 layout activity_graph_edit2
 layout activity_graph_element_edit
 layout activity_graph_elements_list
 layout activity_main
+layout activity_url
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -4593,6 +4635,7 @@ styleable ViewPager2 android_orientation
 styleable ViewStubCompat android_id android_layout android_inflatedId
 styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration ifTagNotSet ifTagSet motionInterpolator motionTarget onStateTransition pathMotionArc setsTag transitionDisable upDuration viewTransitionMode
 styleable include constraintSet
+xml myconfig
 xml standalone_badge
 xml standalone_badge_gravity_bottom_end
 xml standalone_badge_gravity_bottom_start

@@ -74,12 +74,13 @@ public class Node extends GraphElement {
 
     public Node(Graph graph)
     {
-        this(450.0f, 450.0f, graph);
+        this(450.0f, 350.0f, graph);
     }
 
     public Node (Node node, Graph graph)
     {
         this(node.X, node.Y, node.GetName(), graph);
+        IDinAPI = node.IDinAPI;
     }
 
     public float rad = 0.0f;
@@ -95,11 +96,13 @@ public class Node extends GraphElement {
         X = x;
         Y = y;
         NameElement = name;
+
     }
 
     public void SetNode(Node node)
     {
         SetNode(node.X, node.Y, node.GetName());
+        IDinAPI = node.IDinAPI;
     }
 
 

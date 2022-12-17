@@ -5,6 +5,21 @@ import java.util.ArrayList;
 public class Link extends GraphElement {
     Graph graph;
     public float Value = 0.0f;
+
+    public float ValueWithCheck()
+    {
+        try {
+            if (ValueVisible)
+                return Value;
+            else
+                return 0;
+        }
+        catch (Exception ex)
+        {
+            return 0;
+        }
+    }
+
     public float GetValue()
     {
         return Value;
@@ -55,6 +70,8 @@ public class Link extends GraphElement {
         link.Value = Value;
         link.TextVisible = TextVisible;
         link.ValueVisible = ValueVisible;
+
+        link.IDinAPI = IDinAPI;
         return link;
     }
 
@@ -115,10 +132,21 @@ public class Link extends GraphElement {
         SetNodes();
         return source;
     }
+
+    public int IDsourceAPI()
+    {
+        return Source().IDinAPI;
+    }
+
     public Node Target()
     {
         SetNodes();
         return target;
+    }
+
+    public int IDtargetAPI()
+    {
+        return Target().IDinAPI;
     }
 
     public int sourceID, targetID;

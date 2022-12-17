@@ -29,6 +29,8 @@ public class GraphView extends SurfaceView
     int selectedNowNode = -1;
     public int SelectedNowLink()
     {
+        if(selectedNowLink > graph.LinkCount())
+            selectedNowLink=-1;
         return selectedNowLink;
     }
 
@@ -44,7 +46,11 @@ public class GraphView extends SurfaceView
 
     public void SetNode(int index, Node node)
     {
+        Node node1 = graph.GetNode(index);
+        BeforeEditNode(node1);
         graph.SetNode(index, node);
+        node1 = graph.GetNode(index);
+        AfterEditNode(node1, "update");
     }
 
     public void SetNode(Node node)
@@ -56,24 +62,50 @@ public class GraphView extends SurfaceView
 
     public void SetGraphElement(GraphElement element)
     {
-        if(element.IsNode())
+        if(element.IsNode()) {
             SetNode(element.Node());
+        }
         else if(element.IsLink())
         {
             try {
 
-                Link link1 = GrapsParams.GraphElement.Link();
+
+                Link link1 = element.Link();
+                int source = -1;
+                int target = -1;
+                BeforeEditNode(link1);
+                try {
+                    Link link2 = graph.GetLink(selectedNowLink);
+                    source = link2.IDsourceAPI();
+                    target = link2.IDtargetAPI();
+                }
+                catch (Exception ex)
+                {
+                    link1.GetText();
+                }
                 Link link = graph.SetLink(selectedNowLink, link1);
                 link.Orientation = link1.Orientation;
                 link.Value = link1.Value;
                 link.Text = link1.Text;
                 link.ValueVisible = link1.ValueVisible;
                 link.TextVisible = link1.TextVisible;
+                if(link.IDsourceAPI() == source && link.IDtargetAPI() == target)
+                {
+                    AfterEditNode(link, "update");
+                }
+                else
+                {
+                    AfterEditNode(link, "delete");
+                    AfterEditNode(link, "insert");
+                }
+
+
             }
             catch (Exception ex)
             {
-
+                AfterEditNode(null, "select");
             }
+
         }
     }
 
@@ -103,8 +135,11 @@ public class GraphView extends SurfaceView
             return selected1;
         else if (sel2)
             return selected2;
-        else
+        else {
+            if(selectedNowNode > graph.NodeCount())
+                selectedNowNode = -1;
             return selectedNowNode;
+        }
     }
 
     float csx, csy;
@@ -158,7 +193,9 @@ public class GraphView extends SurfaceView
         if(target<0 || target >= graph.NodeCount())
             return null;
         Link link = graph.AddLink(source, target, orientation);
+        BeforeEditNode(link);
         SetGraph(graph);
+        AfterEditNode(link, "insert");
         return link;
     }
 
@@ -254,18 +291,31 @@ public class GraphView extends SurfaceView
 
     public Node AddNode()
     {
+
         Graph graph1 = new Graph();
         Node n = graph1.AddNode();
+        BeforeEditNode(n);
         float x = n.X + dX;
-        float y = n.Y + dy;
+        float y = n.Y + dY;
         Node node = graph.AddNode(x, y);
+        //Node node = graph.AddNode(sX, sY);
         SetGraph(graph);
+        AfterEditNode(n, "insert");
         return node;
+    }
+
+    public void DeleteNode()
+    {
+        DeleteNode(SelectedNowNode());
     }
 
     public void DeleteNode(int index)
     {
+        if(index < 0 || index > graph.NodeCount())
+            return;
         int delete = index;
+        Node node = graph.GetNode(index);
+        BeforeEditNode(node);
         if(delete < graph.NodeCount() && delete > -1)
         {
             graph.DeleteNode(delete);
@@ -291,13 +341,24 @@ public class GraphView extends SurfaceView
 
 
         SetGraph(graph);
+        AfterEditNode(node, "delete");
     }
+
+
+    public void DeleteLink()
+    {
+        DeleteLink(SelectedNowLink());
+    }
+
 
     public void DeleteLink (int id)
     {
         if(id > -1 && id < graph.LinkCount())
         {
+            Link link = graph.GetLink(id);
+            BeforeEditNode(link);
             graph.DeleteLink(id);
+            AfterEditNode(link, "delete");
         }
     }
 
@@ -305,8 +366,12 @@ public class GraphView extends SurfaceView
     {
         if(id > -1 && id < graph.LinkCount())
         {
+            Link link = graph.GetLink(id);
+            BeforeEditNode(link);
             graph.GetLink(id).ChangeOrientationLink();
             SetGraph(graph);
+            AfterEditNode(link, "delete");
+            AfterEditNode(link, "insert");
         }
     }
 
@@ -338,6 +403,8 @@ public class GraphView extends SurfaceView
             DeleteLink(selectedNowLink);
         }
         SetGraph(graph);
+
+
     }
 
 
@@ -377,10 +444,15 @@ public class GraphView extends SurfaceView
                     Node source = l.Source();
                     Node target = l.Target();
 
-                    float sx = source.X - dX;
-                    float sy = source.Y - dY;
-                    float tx = target.X - dX;
-                    float ty = target.Y - dY;
+                    float sx1 = source.X;
+                    float tx1 = target.X;
+                    float sy1 = source.Y;
+                    float ty1 = target.Y;
+                    float sx = sx1 - dX;
+                    float sy = sy1 - dY;
+                    float tx = tx1 - dX;
+                    float ty = ty1 - dY;
+                    float sx2 = sx1, sy2 = sy1, tx2 = tx1, ty2 = ty1;
 
                     p.setStyle(Paint.Style.FILL);
                     p.setColor(color.GetBorderColor());
@@ -389,12 +461,60 @@ public class GraphView extends SurfaceView
                     if (l.Orientation) {
                         float xRad, yRad;
 
-                        float URad = (rad*2f)/(sx + tx);
-                        URad = 1f - URad;
-                        xRad = (tx - sx)*URad;
-                        yRad = (ty - sy) * URad;
+                        //sx1 = Math.abs(sx1);
+                        //tx1 = Math.abs(tx1);
+                        //sy1 = Math.abs(sy1);
+                        //ty1 = Math.abs(ty1);
+                        //float URadX = (rad*2f)/(sx1 + tx1);
+                        //float URadY = (rad*2f)/(sy1 + ty1);
+                        float max = 0.2f;
+                        float SX = Math.abs(tx - sx);
+                        //float URadX = (rad*2f)/SX;
+                        float URadX = max;
+                        while(URadX > max)
+                        {
+                            URadX/=2;
+                        }
+                        float SY = Math.abs(ty - sy);
+                        //float URadY = (rad*2f)/SY;
+                        float URadY = max;
+                        while(URadY > max)
+                        {
+                            URadY/=2;
+                        }
+
+                        //float URadY = URadX;
+                        /*URadX = 1f - URadX;
+                        URadY = 1f - URadY;
+                        xRad = (tx - sx)*URadX;
+                        yRad = (ty - sy) * URadY;
                         xRad += sx;
-                        yRad += sy;
+                        yRad += sy;*/
+                        xRad = yRad = 0;
+                        if(tx == sx)
+                        {
+                            xRad = sx;
+                        }
+                        else if(tx > sx)
+                        {
+                            xRad = tx - SX*URadX;
+                        }
+                        else
+                        {
+                            xRad = tx + SX*URadX;
+                        }
+                        if(ty == sy)
+                        {
+                            yRad = sy;
+                        }
+                        else if(ty > sy)
+                        {
+                            yRad = ty - SY*URadY;
+                        }
+                        else
+                        {
+                            yRad = ty + SY*URadY;
+                        }
 
                         float d = halfside / 2f;
                         canvas.drawRect(xRad - d, yRad - d, xRad + d, yRad + d, p);
@@ -533,6 +653,17 @@ public class GraphView extends SurfaceView
     private float c (float a, float d) {
         return a + d;
     }
+
+    public void BeforeEditNode(GraphElement n)
+    {
+
+    }
+
+    public void AfterEditNode(GraphElement n, String method)
+    {
+
+    }
+
     @Override
     public boolean onTouchEvent(MotionEvent event) {
 
@@ -547,8 +678,12 @@ public class GraphView extends SurfaceView
                     {
                         if(dX == 0)
                             sX = x;
+                        else
+                            sX=x+dX;
                         if(dY == 0)
                             sY = y;
+                        else
+                            sY = y+dY;
                         xc = c(x, dX);
                         yc = c(y, dY);
                         
@@ -570,6 +705,7 @@ public class GraphView extends SurfaceView
                                 dy = ny - yc;
                                 selectedNowLink = -1;
                                 selectedNowNode = i;
+                                BeforeEditNode(n);
                                 if(selected1 > -1)
                                 {
                                     if(i == selected1)
@@ -630,7 +766,11 @@ public class GraphView extends SurfaceView
                             else if (xc >= x0 && xc <= x1 && yc >= y0 && yc <= y1)
                             {
                                 selectedNowLink = i;
+                                Link link = graph.GetLink(i);
+                                BeforeEditNode(link);
 
+                                //Link link = graph.GetLink(i);
+                                //BeforeEditNode(link);
                                 SetGraph(graph);
                                 return true;
                             }
@@ -639,6 +779,7 @@ public class GraphView extends SurfaceView
 
                         SetGraph(graph);
                         toach = true;
+                        AfterEditNode(null, "select");
                         return true;
                     }
                     //break;
@@ -654,8 +795,10 @@ public class GraphView extends SurfaceView
                 }
                 else
                 {
-                    dX = x - sX;
-                    dY = y - sY;
+                    //dX = x - sX;
+                    dX = sX - x;
+                    //dY = y - sY;
+                    dY = sY - y;
                 }
 
                 SetGraph(graph);
@@ -665,12 +808,18 @@ public class GraphView extends SurfaceView
             //break;
             case MotionEvent.ACTION_UP:
             {
+
+                AfterEditNode(null, "select");
                 toach = false;
 
                 int i = SelectedNowNode();
-                if(i < 0 || i >= graph.NodeCount())
+                if(i < 0 || i >= graph.NodeCount()) {
                     return true;
+                }
                 Node n = graph.GetNode(i);
+
+
+
                 sel2 = sel2 && (n.X == selX && n.Y == selY);
                 sel1 = sel1 && (n.X == selX && n.Y == selY) && !sel2;
 
@@ -686,9 +835,10 @@ public class GraphView extends SurfaceView
                     selectedNowNode = -1;
                 }
 
+                AfterEditNode(n, "update");
+
                 SetGraph(graph);
                 sel1 = sel2 = false;
-
                 return true;
             }
             //break;

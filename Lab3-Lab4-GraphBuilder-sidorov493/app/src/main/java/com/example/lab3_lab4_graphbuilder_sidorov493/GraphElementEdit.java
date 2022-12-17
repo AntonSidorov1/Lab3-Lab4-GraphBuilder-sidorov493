@@ -1,8 +1,10 @@
 package com.example.lab3_lab4_graphbuilder_sidorov493;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
@@ -208,6 +210,7 @@ public class GraphElementEdit extends AppCompatActivity {
         copy = new Button(this);
         past = new Button(this);
         copy.setText("Копировать");
+
         past.setText("Вставить");
         copy.setLayoutParams(params);
         past.setLayoutParams(params);
@@ -223,13 +226,20 @@ public class GraphElementEdit extends AppCompatActivity {
                PastElement(view);
             }
         });
-        mainPanel.addView(copy);
-        mainPanel.addView(past);
+        Boolean node = GrapsParams.API && GrapsParams.GraphElement.IsNode();
+        Boolean link = GrapsParams.API && GrapsParams.GraphElement.IsLink();
+        Boolean past1 = node || link;
+        past1 = !past1;
+        if(past1)
+        {
+            mainPanel.addView(copy);
+            mainPanel.addView(past);
+        }
 
         toGraph = new Button(this);
         toGraph.setText("К графу");
         toGraph.setLayoutParams(params);
-        mainPanel.addView(toGraph);
+        //mainPanel.addView(toGraph);
         toGraph.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -237,6 +247,44 @@ public class GraphElementEdit extends AppCompatActivity {
             }
         });
 
+        if(!GrapsParams.GraphElement.IsGraph())
+            return;
+        GrapsParams.NowGraph = GrapsParams.GraphElement.Graph();
+        Button toAPI = new Button(this);
+        mainPanel.addView(toAPI);
+        toAPI.setLayoutParams(params);
+        if(!GrapsParams.API) {
+            toAPI.setText("Сохранить в API");
+            toAPI.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    GrapsParams.NowGraph.SetName(nameEdit.getText().toString());
+                    Intent i = new Intent(GetContent(), AutorizationActivity.class);
+                    startActivityForResult(i, 100);
+                }
+            });
+        }
+        else
+        {
+            toAPI.setText("Сохранить на устройство");
+            toAPI.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    GrapsParams.DB.upload_graph(GrapsParams.GraphElement.Graph());
+                    AlertDialog.Builder builder = new AlertDialog.Builder(GetContent());
+                    AlertDialog dialog = builder.create();
+                    dialog.setMessage("Граф успешно сохранён");
+                    dialog.show();
+                    GrapsParams.GraphElement.Set_API_ID(-1);
+                }
+            });
+        }
+
+    }
+
+    public Context GetContent()
+    {
+        return this;
     }
 
     public void ToGraph (View v)
@@ -311,6 +359,10 @@ public class GraphElementEdit extends AppCompatActivity {
             } else if (graphElement.IsGraph()) {
 
                 nameEdit.setText(nameLabel.getText().toString());
+                if(GrapsParams.API)
+                {
+                    CreateGraph.PastGraph(this, graphElement.Graph());
+                }
             }
         }
         catch(Exception ex)

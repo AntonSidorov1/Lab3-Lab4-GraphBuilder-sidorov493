@@ -11,6 +11,43 @@ public class GraphElement_List extends ArrayList<GraphElement> {
         return graph;
     }
 
+    public int IdElementFromAPI(int id_api)
+    {
+        try
+        {
+            int id = id_api;
+            for(int i = 0; i < size(); i++)
+            {
+                try
+                {
+                    GraphElement node = get(i);
+                    int api = node.IDinAPI;
+                    if(api == id)
+                        return i;
+                }
+                catch (Exception ex)
+                {
+
+                }
+            }
+            return  -1;
+        }
+        catch (Exception ex)
+        {
+            return -1;
+        }
+    }
+
+    public GraphElement ElementFromAPI(int id_api) {
+        try {
+            int id = IdElementFromAPI(id_api);
+            GraphElement node = get(id);
+            return node;
+        } catch (Exception ex) {
+            return null;
+        }
+    }
+
     public GraphElementName elementName;
 
     public void SetGraph(Graph graph, GraphElementName elementName)
@@ -23,6 +60,16 @@ public class GraphElement_List extends ArrayList<GraphElement> {
             addListNodes(graph.nodes);
         else if(elementName == GraphElementName.Link)
             addListLinks(graph.links);
+    }
+
+    public void AddElements(GraphElement_List elements)
+    {
+        if(elements.IsGraph())
+            addListGraphs(elements);
+        else if(elements.IsNode())
+            addListNodes(elements);
+        else if(elements.IsLink())
+            addListLinks(elements);
     }
 
     public void SetGraph()
@@ -68,11 +115,38 @@ public class GraphElement_List extends ArrayList<GraphElement> {
     public GraphElement_List(GraphElement_List list)
     {
         this();
+        if(list.IsGraph())
         addListGraphs(list);
+        else if(list.IsNode())
+            addListNodes(list);
+        else if(list.IsLink())
+            addListLinks(list);
     }
+
+
 
     public boolean addListNodes(@NonNull ArrayList<Node> graphs) {
         return super.addAll(graphs);
+    }
+
+    public boolean addListNodes(@NonNull GraphElement_List graphs) {
+        for(int i = 0; i < graphs.size(); i++)
+        {
+            GraphElement graphElement = graphs.get(i);
+            if(graphElement.IsNode())
+                add(graphElement);
+        }
+        return size() > 0;
+    }
+
+    public boolean addListLinks(@NonNull GraphElement_List graphs) {
+        for(int i = 0; i < graphs.size(); i++)
+        {
+            GraphElement graphElement = graphs.get(i);
+            if(graphElement.IsLink())
+                add(graphElement);
+        }
+        return size() > 0;
     }
 
     public boolean addListLinks(@NonNull ArrayList<Link> graphs) {
