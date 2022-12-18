@@ -150,7 +150,7 @@ public class GrapsParams {
         String end1 = "";
         if(PortUrl != "" && !PortUrl.equals("") && PortUrl != null) {
             try {
-                if(DomainUrl.contains("/"))
+                if(DomainUrl.contains("/") || DomainUrl.contains(":"))
                     throw  new Exception();
                 String[] parts = PortUrl.split("/");
                 Integer.parseInt(parts[0]);
